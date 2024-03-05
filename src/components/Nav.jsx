@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaAlignJustify } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 
@@ -9,7 +9,7 @@ export default function Nav() {
   return (
     <>
       <div className={`flex justify-center ${dropDown ? "hidden" : ""}`}>
-        <div className="flex w-[90vw] py-2 justify-between items-center">
+        <div className="flex w-[90vw] py-5 justify-between items-center">
           <h2 className="text-black font-bold text-2xl">
             <span className="text-green-500">Bra</span>nd
           </h2>
