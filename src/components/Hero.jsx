@@ -1,4 +1,4 @@
-import house from "../assets/images/house3.jpg";
+// import house from "../assets/images/house3.jpg";
 
 function Hero() {
   return (
@@ -7,7 +7,7 @@ function Hero() {
         className={`w-[100vw] bg-[url('/src/assets/images/house3.jpg')] bg-cover bg-center relative md:w-[90vw] rounded-lg`}
       >
         <div className="bg-black bg-opacity-40 text-white w-full h-full relative rounded-lg">
-          <div className="w-[60%] absolute bottom-[8vh] left-5 flex flex-col gap-[1rem]">
+          <div className="w-[70%] absolute bottom-[8vh] left-5 flex flex-col gap-[1rem]">
             <h1 className="text-5xl font-bold leading-none md:text-6xl">
               Protect your home and belongings with insurewise
             </h1>
@@ -33,41 +33,3 @@ function Hero() {
 }
 
 export default Hero;
-
-/**
- * <section className="flex justify-center bg-[#f3f5f5]">
-      <main className="w-[90vw] flex justify-between h-[70vh]">
-        <div className="flex-1 flex flex-col gap-7">
-          <div className="flex flex-col gap-3">
-            <p>
-              news <span>get update news stay connected with brand</span>
-            </p>
-            <h1>The smarter choice for save life</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates numquam dolorem excepturi, quibusdam perferendis
-              accusamus omnis voluptate,
-            </p>
-          </div>
-          <div>
-            <p>get consultation</p>
-            <div>
-              <input type="text" />
-              <button>signup</button>
-            </div>
-          </div>
-          <div>
-            <p>find an agent</p>
-            <p>make a claim</p>
-          </div>
-        </div>
-        <div className="flex-1 h-full border-2 border-red-300">
-          <img
-            src={sub}
-            alt="my profile"
-            className="h-full w-full border-2 border-red-300"
-          />
-        </div>
-      </main>
-    </section>
- */
