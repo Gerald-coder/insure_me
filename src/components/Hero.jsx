@@ -4,9 +4,9 @@ function Hero() {
   return (
     <div className="flex justify-center h-[100vh]">
       <div
-        className={`w-[100vw] bg-[url('/src/assets/images/house3.jpg')] bg-cover bg-center relative md:w-[90vw]`}
+        className={`w-[100vw] bg-[url('/src/assets/images/house3.jpg')] bg-cover bg-center relative md:w-[90vw] rounded-lg`}
       >
-        <div className="bg-black bg-opacity-40 text-white w-full h-full relative">
+        <div className="bg-black bg-opacity-40 text-white w-full h-full relative rounded-lg">
           <div className="w-[60%] absolute bottom-[8vh] left-5 flex flex-col gap-[1rem]">
             <h1 className="text-5xl font-bold leading-none md:text-6xl">
               Protect your home and belongings with insurewise
