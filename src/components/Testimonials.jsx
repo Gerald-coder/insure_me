@@ -34,20 +34,6 @@ const Clients = () => {
                 bgColor={"bg-gray-400 bg-opacity-40"}
                 rating={client.rating}
               />
-
-              //   <div key={client.id} className="flex flex-col w-[20vw] bg-white">
-              //     <img
-              //       src={client.img}
-              //       alt={`client${client.id}`}
-              //       className="w-[12vw] md:w-[8vw] h-[9vh] rounded-[50%]"
-              //     />
-              //     <p>
-              //       {" "}
-              //       <strong>text={client.name} </strong>
-              //     </p>
-              //     <P text={client.desc} />
-              //     <button>{client.rating}</button>
-              //   </div>
             );
           })}
         </div>
