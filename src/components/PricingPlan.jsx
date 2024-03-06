@@ -16,7 +16,7 @@ export default function PricingPlan() {
           consetetur sadipscing
         </p>
       </div>
-      <div className="flex flex-wrap w-[90vw]">
+      <div className="flex justify-center flex-wrap w-[90vw]">
         <Box
           heading="Family Protection"
           desc="Covers your personal belongings (furniture, clothing, electronics, etc.) if they're damaged or stolen"
