@@ -1,9 +1,8 @@
 // import { useState } from "react";
-import Box from "./components/Box";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
-import { BsHeartPulse } from "react-icons/bs";
 import PricingPlan from "./components/PricingPlan";
+import LearnMore from "./components/LearnMore";
 
 export default function App() {
   return (
@@ -15,6 +14,7 @@ export default function App() {
         <Hero />
         <div className="flex flex-col items-center my-4">
           <PricingPlan />
+          <LearnMore />
         </div>
       </div>
     </>
