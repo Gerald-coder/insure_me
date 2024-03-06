@@ -1,6 +1,7 @@
 // import { useState } from "react";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
+import LearnMore from "./components/LearnMore";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       </div>
       <div className="h-[88vh] overflow-y-scroll">
         <Hero />
+        <LearnMore />
       </div>
     </>
   );
