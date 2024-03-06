@@ -5,7 +5,7 @@ import { LuPlane } from "react-icons/lu";
 import { PiHouseLight } from "react-icons/pi";
 import { TbBus } from "react-icons/tb";
 
-export default function PricingPlan() {
+export default function Service() {
   return (
     <div className="flex justify-center flex-wrap w-[90vw]">
       <ServiceBox heading="Tour Insurance" signColor="bg-blue-300">
