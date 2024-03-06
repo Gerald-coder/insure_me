@@ -18,8 +18,8 @@ const explore = [
 
 function LearnMore() {
   return (
-    <div className="flex justify-center h-[100vh] md:h-[70vh]  my-10 py-5">
-      <main className="flex flex-col justify-between items-center h-[100vh] gap-10 w-[90vw] md:flex-row md:h-full">
+    <div className="flex justify-center h-[100vh] md:h-[90vh]  my-10 py-5">
+      <main className="flex flex-col justify-between items-center h-[100vh] gap-1 w-[90vw] md:flex-row md:gap-5 md:h-full">
         <div className="flex-1 grid grid-cols-3 gap-4 p-5 h-[80%]">
           <div className="col-span-2 h-full">
             <img src={fam1} alt="fam1" className="h-full rounded-lg" />

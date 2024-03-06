@@ -13,6 +13,7 @@ export default function App() {
       </div>
       <div className="h-[87vh] overflow-y-scroll remove-scrollbar">
         <Hero />
+
         <div className="flex flex-col items-center my-4">
           <Service />
           <LearnMore />
