@@ -5,6 +5,8 @@ import { IoIosArrowDown } from "react-icons/io";
 import { MdLocationPin } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 
+/* eslint-disable */
+
 const explore = [
   {
     icon: <MdLocationPin />,
@@ -15,6 +17,17 @@ const explore = [
   { icon: <FaPhone />, text: "+1 252-756-9956", id: 3 },
   { icon: <FaPhone />, text: "+1 252-756-9956", id: 4 },
 ];
+
+export const H1 = ({ text }) => {
+  return (
+    <h1 className="text-2xl md:text-5xl">
+      <strong>{text}</strong>
+    </h1>
+  );
+};
+export const P = ({ text }) => {
+  return <p className="text-2xl font-normal md:text-3xl">{text}</p>;
+};
 
 function LearnMore() {
   return (
