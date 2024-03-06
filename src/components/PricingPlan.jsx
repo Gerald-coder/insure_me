@@ -27,7 +27,7 @@ export default function PricingPlan() {
         <Box
           heading="Hospital Protection"
           desc="Covers your personal belongings (furniture, clothing, electronics, etc.) if they're damaged or stolen"
-          buttonColor={"bg-green-400"}
+          buttonColor="bg-green-400"
         >
           <BsHeartPulse size={60} />
         </Box>
