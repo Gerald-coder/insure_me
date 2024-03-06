@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import { BsHeartPulse } from "react-icons/bs";
 import PricingPlan from "./components/PricingPlan";
+import ServiceBox from "./components/ServiceBox";
 
 export default function App() {
   return (
@@ -15,7 +16,7 @@ export default function App() {
         <Hero />
         <div className="flex flex-col items-center my-4">
           <PricingPlan />
-          {/* <ServiceBox /> */}
+          <ServiceBox />
         </div>
       </div>
     </>
