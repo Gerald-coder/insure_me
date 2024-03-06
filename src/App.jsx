@@ -1,9 +1,18 @@
-import { useState } from "react";
-import "./App.css";
+// import { useState } from "react";
 import Box from "./components/Box";
+import Hero from "./components/Hero";
+import Nav from "./components/Nav";
 
-function App() {
-  return <Box />;
+export default function App() {
+  return (
+    <>
+      <div className="h-[10vh]  border-b-2 border-gray-400 mb-4">
+        <Nav />
+      </div>
+      <div className="h-[88vh] overflow-y-scroll">
+        <Hero />
+        <Box />
+      </div>
+    </>
+  );
 }
-
-export default App;
