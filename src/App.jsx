@@ -1,10 +1,9 @@
 // import { useState } from "react";
-import Box from "./components/Box";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
-import { BsHeartPulse } from "react-icons/bs";
 import PricingPlan from "./components/PricingPlan";
-import ServiceBox from "./components/ServiceBox";
+import LearnMore from "./components/LearnMore";
+import Service from "./components/Service";
 
 export default function App() {
   return (
@@ -15,8 +14,9 @@ export default function App() {
       <div className="h-[87vh] overflow-y-scroll remove-scrollbar">
         <Hero />
         <div className="flex flex-col items-center my-4">
+          <Service />
+          <LearnMore />
           <PricingPlan />
-          <ServiceBox />
         </div>
       </div>
     </>
