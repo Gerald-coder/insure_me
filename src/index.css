@@ -19,3 +19,22 @@
   box-sizing: border-box;
   padding: 0;
 }
+
+.remove-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+/* For Chrome and Safari */
+.remove-scrollbar::-webkit-scrollbar-thumb {
+  display: none; /* Hide the thumb */
+}
+
+/* For Firefox */
+.remove-scrollbar {
+  scrollbar-width: none;
+}
+
+/* For Firefox */
+.remove-scrollbar::-webkit-scrollbar-thumb {
+  display: none; /* Hide the thumb */
+}

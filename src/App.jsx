@@ -9,8 +9,8 @@ export default function App() {
       <div className="h-[10vh]  border-b-2 border-gray-400 mb-4">
         <Nav />
       </div>
-      <div className="h-[88vh] overflow-y-scroll">
-        <Hero />
+      <div className="h-[87vh] overflow-y-scroll remove-scrollbar">
+        {/* <Hero /> */}
         <Box />
       </div>
     </>
