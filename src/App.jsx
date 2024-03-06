@@ -15,6 +15,7 @@ export default function App() {
         <Hero />
         <div className="flex flex-col items-center my-4">
           <PricingPlan />
+          {/* <ServiceBox /> */}
         </div>
       </div>
     </>
