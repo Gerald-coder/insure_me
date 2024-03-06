@@ -1,10 +1,10 @@
-import React from "react";
 import Box from "./Box";
 import { BsHeartPulse } from "react-icons/bs";
 import { MdOutlineFamilyRestroom } from "react-icons/md";
 import { GiThreeLeaves } from "react-icons/gi";
 
 export default function PricingPlan() {
+  const type = true;
   return (
     <>
       <div className="w-[60vw] my-10 text-center md:w-[30%]">
@@ -18,6 +18,7 @@ export default function PricingPlan() {
       </div>
       <div className="flex justify-center flex-wrap w-[90vw]">
         <Box
+          type={type}
           heading="Family Protection"
           desc="Covers your personal belongings (furniture, clothing, electronics, etc.) if they're damaged or stolen"
           buttonColor={"bg-red-400"}
@@ -25,6 +26,7 @@ export default function PricingPlan() {
           <MdOutlineFamilyRestroom size={60} />
         </Box>
         <Box
+          type={type}
           heading="Hospital Protection"
           desc="Covers your personal belongings (furniture, clothing, electronics, etc.) if they're damaged or stolen"
           buttonColor="bg-green-400"
@@ -32,6 +34,7 @@ export default function PricingPlan() {
           <BsHeartPulse size={60} />
         </Box>
         <Box
+          type={type}
           heading="Check Suitability"
           desc="Covers your personal belongings (furniture, clothing, electronics, etc.) if they're damaged or stolen"
           buttonColor={"bg-blue-400"}
@@ -39,6 +42,7 @@ export default function PricingPlan() {
           <GiThreeLeaves size={60} />
         </Box>
         <Box
+          type={type}
           heading="Hospital Protection"
           desc="Covers your personal belongings (furniture, clothing, electronics, etc.) if they're damaged or stolen"
           buttonColor={"bg-green-400"}
@@ -46,6 +50,7 @@ export default function PricingPlan() {
           <BsHeartPulse size={60} />
         </Box>
         <Box
+          type={type}
           heading="Check Suitability"
           desc="Covers your personal belongings (furniture, clothing, electronics, etc.) if they're damaged or stolen"
           buttonColor={"bg-red-400"}

@@ -5,22 +5,50 @@ import car2 from "../assets/images/cars2.webp";
 import car5 from "../assets/images/car5.webp";
 import lady from "../assets/images/lady.jpg";
 import { clients } from "../utils";
+import Box from "./Box";
 
 const Clients = () => {
+  const type = false;
   return (
     <section className="flex justify-center h-auto p-2 bg-gray-400 bg-opacity-40 w-full">
-      <div className="p-2 flex flex-col items-center justify-between w-[90vw] h-full md:flex-row md:gap-5">
-        <div>
-          <H1 text={"This is what out clients have tos say"} />
-          <P
-            text={
-              "With CCIC-Groups, Our dedicated team is always here to assist you, providing personalized support every step of the way"
-            }
-          />
+      <div className="p-2 flex flex-col items-center justify-center w-[90vw] h-full md:gap-5">
+        <div className="flex flex-col gap-3  items-center w-[50vw]">
+          <H1 text={"This is what out clients have to say"} />
+
+          <p className="text-2xl text-balance">
+            With CCIC-Groups, Our dedicated team is always here to assist you,
+            providing personalized support every step of the way
+          </p>
         </div>
-        <div className="">
+        <div className="flex justify-center flex-wrap w-[90vw]">
           {clients.map((client) => {
-            return <div key={client.id}></div>;
+            return (
+              <Box
+                desc={client.desc}
+                key={client.id}
+                heading={client.name}
+                type={type}
+                image={client.img}
+                id={client.id}
+                // bgColor={"bg-white"}
+                bgColor={"bg-gray-400 bg-opacity-40"}
+                rating={client.rating}
+              />
+
+              //   <div key={client.id} className="flex flex-col w-[20vw] bg-white">
+              //     <img
+              //       src={client.img}
+              //       alt={`client${client.id}`}
+              //       className="w-[12vw] md:w-[8vw] h-[9vh] rounded-[50%]"
+              //     />
+              //     <p>
+              //       {" "}
+              //       <strong>text={client.name} </strong>
+              //     </p>
+              //     <P text={client.desc} />
+              //     <button>{client.rating}</button>
+              //   </div>
+            );
           })}
         </div>
       </div>

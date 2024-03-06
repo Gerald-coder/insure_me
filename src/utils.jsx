@@ -2,6 +2,7 @@ import client1 from "./assets/images/client1.jpg";
 import client2 from "./assets/images/client2.jpg";
 import client3 from "./assets/images/client3.jpg";
 import { IoStarOutline } from "react-icons/io5";
+import lady from "./assets/images/lady.jpg";
 
 export const clients = [
   {
@@ -9,7 +10,7 @@ export const clients = [
     id: 1,
     desc: "CCIC-Groups made getting insurance easy and stress-free. Their team was incredibly helpful and guided me through the entire process. I feel confident knowing that my family and I are protected with their comprehensive coverage",
     rating: <IoStarOutline />,
-    name: "Sarah T",
+    name: "Davis L",
   },
   {
     img: client2,
@@ -23,6 +24,13 @@ export const clients = [
     id: 3,
     desc: "I recently had to file a claim with CCIC-Groups, and I was impressed by how quickly and efficiently they handled everything. Their claims process was straightforward, and I received prompt assistance every step of the way. Thank you, CCIC-Groups, for your exceptional service!",
     rating: <IoStarOutline />,
-    name: "Davis L",
+    name: "Sarah T",
+  },
+  {
+    img: lady,
+    id: 3,
+    desc: "CCIC-Groups truly cares about their clients and goes above and beyond to ensure their satisfaction. I'nothing but positive experiences with them",
+    rating: <IoStarOutline />,
+    name: "Maria Curia",
   },
 ];
