@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import PricingPlan from "./components/PricingPlan";
 import LearnMore from "./components/LearnMore";
+import Testimonials from "./components/Testimonials";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <div className="flex flex-col items-center my-4">
           <LearnMore />
           <PricingPlan />
+          <Testimonials />
         </div>
       </div>
     </>

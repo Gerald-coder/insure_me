@@ -5,6 +5,8 @@ import { IoIosArrowDown } from "react-icons/io";
 import { MdLocationPin } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 
+/* eslint-disable */
+
 const explore = [
   {
     icon: <MdLocationPin />,
@@ -15,6 +17,17 @@ const explore = [
   { icon: <FaPhone />, text: "+1 252-756-9956", id: 3 },
   { icon: <FaPhone />, text: "+1 252-756-9956", id: 4 },
 ];
+
+export const H1 = ({ text }) => {
+  return (
+    <h1 className="text-2xl md:text-5xl">
+      <strong>{text}</strong>
+    </h1>
+  );
+};
+export const P = ({ text }) => {
+  return <p className="text-2xl font-normal md:text-3xl">{text}</p>;
+};
 
 function LearnMore() {
   return (
@@ -30,13 +43,12 @@ function LearnMore() {
           </div>
         </div>
         <div className="flex-1 flex flex-col gap-5 p-5 h-[80%]">
-          <h1 className="text-2xl md:text-5xl">
-            <strong>New to Insurance? No Problem</strong>
-          </h1>
-          <p className="text-2xl font-normal md:text-3xl">
-            We have helped over <strong>450+</strong> client secure their lives
-            and properties while they focus on what matters
-          </p>
+          <H1 text={"New to Insurance? No Problem"} />
+          <P
+            text={
+              " We have helped over <strong>450+</strong> client secure their lives and properties while they focus on what matters"
+            }
+          />
           <button className="self-start flex gap-2 justify-center items-center h-[8vh] px-5 bg-blue-700 text-white text-2xl rounded-lg">
             <strong>Get in touch</strong> <IoIosArrowDown />
           </button>
