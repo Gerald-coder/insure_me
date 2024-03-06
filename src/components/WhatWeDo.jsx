@@ -4,7 +4,7 @@ import people from "../assets/images/people.png";
 
 export default function WhatWeDo() {
   return (
-    <div className="flex flex-col items-center w-[90vw] mt-10 gap-4 px-3 md:flex-row md:justify-between md:items-start border-2 border-red-300">
+    <div className="flex flex-col items-center w-[90vw] mt-6 gap-4 px-3 md:flex-row md:justify-between md:items-start">
       <div className="w-full">
         <h2 className="py-3 text-2xl md:text-5xl">
           <strong>We take the work off your hands</strong>
@@ -26,7 +26,7 @@ export default function WhatWeDo() {
         />
       </div>
       <div className="flex w-full mt-[5vh] md:h-[65vh] justify-end">
-        <img src={people} className="w-full md:w-[95%]" />
+        <img src={people} className="w-full md:w-[95%]" alt="people" />
       </div>
     </div>
   );
