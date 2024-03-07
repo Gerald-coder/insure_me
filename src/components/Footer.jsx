@@ -33,13 +33,16 @@ function Footer() {
     <>
       <Consultation />
       <div className="flex justify-center py-5 border-b-2 border-gray-400">
-        <div className="flex flex-col gap-10 w-[90vw] items-start md:items-center  md:flex-row">
-          <div className="flex flex-col items-start justify-start h-full w-full md:w-[10vw] p-4 border-2 border-red-500">
+        <div className="flex flex-col gap-5 w-[90vw] items-start md:items-center md:gap-10 md:flex-row">
+          <div className="w-full h-full flex items-stat justify-center md:w-[20vw]">
+            <img src={logo2} alt="logo2" className="w-full" />
+          </div>
+          <div className="flex flex-col items-start gap-4 justify-start h-full w-full md:w-[10vw] p-4">
             <h1 className="flex items-start justify-start gap-2 text-nowrap w-full md:items-center md:justify-center">
-              <img src={logo} alt="" className="w-[3vw]" />{" "}
+              <img src={logo} alt="logo" className="w-[2vw]" />{" "}
               <span className="font-bold text-xl md:text-xl">Quick links</span>
             </h1>
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-col gap-2 md:text-xl">
               <li>Testimonials</li>
               <li>Services</li>
               <li>Our team</li>
@@ -50,12 +53,12 @@ function Footer() {
           {footerLinks.map((details) => (
             <div
               key={details.id}
-              className="flex flex-col items-start justify-start gap-3 h-full w-full  p-4 border-2 md:w-auto border-red-500"
+              className="flex flex-col items-start justify-start gap-4 h-full w-full  p-4 md:w-auto"
             >
-              <h1 className="font-bold text-xl md:text-2xl">{details.title}</h1>
+              <h1 className="font-bold text-xl md:text-3xl">{details.title}</h1>
               <div className="flex flex-col gap-2">
                 {details.items.map((item) => (
-                  <p key={item.id} className="flex gap-2">
+                  <p key={item.id} className="flex gap-2 md:text-xl">
                     {item.icon && <span>{item.icon}</span>}
                     {item.item}
                   </p>
@@ -65,7 +68,7 @@ function Footer() {
           ))}
         </div>
       </div>
-      <div className="flex py-5 w-[90vw] text-xl font-bold md:text-2xl justify-center border-2 border-red-500">
+      <div className="flex py-5 w-[90vw] text-xl font-bold md:text-2xl justify-center">
         <h1> &copy; CCIC All Rights Reserved.</h1>
       </div>
     </>
