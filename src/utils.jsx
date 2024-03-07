@@ -3,7 +3,37 @@ import client2 from "./assets/images/client2.jpg";
 import client3 from "./assets/images/client3.jpg";
 import { IoStarOutline } from "react-icons/io5";
 import lady from "./assets/images/lady.jpg";
+import { MdLocationPin } from "react-icons/md";
+import { FaPhone } from "react-icons/fa6";
 
+// Our company leads the industry in wealth management. We provide independent RIA and broker services that are powered by over 20 years of industry experience
+
+export const footerLinks = [
+  //   { title: "Services", items: [{ item: "" }, { item: "" }, { item: "" }] },
+  {
+    title: "Features",
+    id: 1,
+    items: [
+      { id: 1, item: "Business Marketing" },
+      { id: 2, item: "User Analytics" },
+      { id: 3, item: "Unlimited Support" },
+      { id: 4, item: "Client Satisfaction" },
+    ],
+  },
+  {
+    title: "Get in touch",
+    id: 2,
+    items: [
+      { id: 1, item: "+1 252-756-9956", icon: <FaPhone /> },
+      { id: 2, item: "+1 252-756-9956", icon: <MdLocationPin /> },
+      {
+        id: 3,
+        item: "359 Manchester St A Greenville, NC 27834, United States",
+        icon: <MdLocationPin />,
+      },
+    ],
+  },
+];
 export const clients = [
   {
     img: client1,
@@ -28,7 +58,7 @@ export const clients = [
   },
   {
     img: lady,
-    id: 3,
+    id: 4,
     desc: "CCIC-Groups truly cares about their clients and goes above and beyond to ensure their satisfaction. I'nothing but positive experiences with them",
     rating: <IoStarOutline />,
     name: "Maria Curia",

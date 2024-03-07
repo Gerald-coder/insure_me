@@ -6,11 +6,12 @@ import LearnMore from "./components/LearnMore";
 import Testimonials from "./components/Testimonials";
 import Service from "./components/Service";
 import WhatWeDo from "./components/WhatWeDo";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
     <>
-      <div className="h-[10vh]  border-b-2 border-gray-400">
+      <div className="h-[12vh] md:h-[15vh]  border-b-2 border-gray-400">
         <Nav />
       </div>
       <div className="h-[87vh] overflow-y-scroll remove-scrollbar">
@@ -21,6 +22,7 @@ export default function App() {
           <WhatWeDo />
           <PricingPlan />
           <Testimonials />
+          <Footer />
         </div>
       </div>
     </>
