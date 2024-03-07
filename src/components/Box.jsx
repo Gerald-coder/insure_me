@@ -16,7 +16,7 @@ export default function Box({
       className={`${bgColor} flex justify-center w-[40vw] mx-2 my-2 min-h-[50vh] border-2 border-gray-300 rounded-lg md:w-[16vw]`}
     >
       <div className="flex flex-col my-3 px-2 items-center justify-between">
-        <h2 className="font-bold text-base md:text-base">{heading}</h2>
+        <h2 className="font-bold text-base">{heading}</h2>
         {type ? (
           <div className="py-1">{children}</div>
         ) : (
