@@ -6,6 +6,7 @@ import LearnMore from "./components/LearnMore";
 import Testimonials from "./components/Testimonials";
 import Service from "./components/Service";
 import WhatWeDo from "./components/WhatWeDo";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <WhatWeDo />
           <PricingPlan />
           <Testimonials />
+          <Footer />
         </div>
       </div>
     </>

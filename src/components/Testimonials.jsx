@@ -10,7 +10,7 @@ import Box from "./Box";
 const Clients = () => {
   const type = false;
   return (
-    <section className="flex justify-center h-auto p-2 bg-gray-400 bg-opacity-40 w-full">
+    <section className="flex justify-center h-auto p-2 bg-Gray w-full">
       <div className="p-2 flex flex-col items-center justify-center w-[90vw] h-full md:gap-5">
         <div className="w-[60vw] my-10 text-center md:w-[50%]">
           <H1 text={"This is what our clients have to say"} />
@@ -45,7 +45,7 @@ const Clients = () => {
 function Testimonials() {
   return (
     <>
-      <div className="flex justify-center h-[70vh] p-2 bg-gray-400 bg-opacity-40 w-full">
+      <div className="flex justify-center h-[70vh] p-2 bg-Gray  w-full">
         <div className="p-2 flex flex-col items-center justify-between w-[90vw] h-full md:flex-row md:gap-5">
           <div className="flex-1 flex flex-col gap-5">
             {" "}
