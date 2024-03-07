@@ -13,7 +13,7 @@ const Clients = () => {
     <section className="flex justify-center h-auto p-2 bg-gray-400 bg-opacity-40 w-full">
       <div className="p-2 flex flex-col items-center justify-center w-[90vw] h-full md:gap-5">
         <div className="w-[60vw] my-10 text-center md:w-[50%]">
-          <H1 text={"This is what out clients have to say"} />
+          <H1 text={"This is what our clients have to say"} />
 
           <p className="text-center text-gray-800 text-sm font-normal md:text-2xl">
             With CCIC-Groups, Our dedicated team is always here to assist you,
