@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaAlignJustify } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
+import logo from "../assets/images/logo.png";
 
 export default function Nav() {
   const [dropDown, setDropDown] = useState(false);
@@ -10,8 +11,10 @@ export default function Nav() {
     <>
       <div className={`flex justify-center ${dropDown ? "hidden" : ""}`}>
         <div className="flex w-[90vw] py-5 justify-between items-center">
-          <h2 className="text-black font-bold text-2xl">
-            <span className="text-green-500">Bra</span>nd
+          <h2 className="text-black font-bold text-3xl justify-center">
+            <img src={logo} alt="" className="w-[4vw]" />{" "}
+            <span className="text-logo1Color">CI</span>
+            <span className="text-logo2Color">CC</span>
           </h2>
           <div className="flex items-center gap-7">
             <h2 className="font-semibold hidden text-xm text-black md:block">

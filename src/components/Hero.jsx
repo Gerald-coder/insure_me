@@ -1,4 +1,3 @@
-// import house from "../assets/images/house3.jpg";
 
 function Hero() {
   return (

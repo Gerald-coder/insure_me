@@ -8,6 +8,10 @@ export default {
         Gray: "#FAFAFA",
         btn: "25A5F0",
       },
+      colors: {
+        logo1Color: "#F1592A",
+        logo2Color: "#2E3192",
+      },
       screens: { md: "970px" },
     },
   },
