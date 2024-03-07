@@ -34,7 +34,7 @@ function Footer() {
       <Consultation />
       <div className="flex justify-center py-5 border-b-2 border-gray-400">
         <div className="flex flex-col gap-5 w-[90vw] items-start md:items-center md:gap-10 md:flex-row">
-          <div className="w-full h-full flex items-stat justify-center md:w-[20vw]">
+          <div className="w-full flex items-stat justify-center md:w-[15vw]">
             <img src={logo2} alt="logo2" className="w-full" />
           </div>
           <div className="flex flex-col items-start gap-4 justify-start h-full w-full md:w-[10vw] p-4">
