@@ -13,7 +13,7 @@ const Clients = () => {
     <section className="flex justify-center h-auto p-2 bg-Gray w-full">
       <div className="p-2 flex flex-col items-center justify-center w-[90vw] h-full md:gap-5">
         <div className="w-[60vw] my-10 text-center md:w-[50%]">
-          <H1 text={"This is what our clients have to say"} />
+          <H1 text="This is what our clients have to say" />
 
           <p className="text-center text-gray-800 text-sm font-normal md:text-2xl">
             With CCIC-Groups, Our dedicated team is always here to assist you,
@@ -46,17 +46,16 @@ function Testimonials() {
   return (
     <>
       <div className="flex justify-center h-[70vh] p-2 bg-Gray  w-full">
-        <div className="p-2 flex flex-col items-center justify-between w-[90vw] h-full md:flex-row md:gap-5">
+        <div className="p-2 flex flex-col items-center justify-between w-[90vw] h-full md:flex-row gap-9">
           <div className="flex-1 flex flex-col gap-5">
-            {" "}
-            <H1 text={"Why Trust Us?"} />
+            <H1 text="Why Trust Us?" />
             <P
               text={
                 "We have helped over half a thousands clients secure their life and assets, world wide, giving 100% satisfaction"
               }
             />
             <div className="flex items-center justify-start gap-5">
-              <div className="w-[12vw] md:w-[8vw] h-[9vh] rounded-[50%] flex items-center justify-between">
+              <div className="w-[10vh] md:w-[10vh] h-[10vh] rounded-[50%] flex items-center justify-between">
                 <img
                   src={lady}
                   alt="insured"
@@ -71,20 +70,19 @@ function Testimonials() {
               </div>
             </div>
           </div>
-          <div className="flex-1 grid grid-cols-2 gap-2 bg-gray-400 bg-opacity-40 rounded-r-lg">
+          <div className="flex-1 grid grid-cols-2 gap-2 p-2 bg-gray-400 bg-opacity-40 rounded-tr-lg rounded-bl-lg">
             <div className="w-[90%] rounded-lg">
-              {" "}
               <img src={car1} alt="car1" className=" rounded-lg" />
             </div>
             <div className="w-[90%] flex items-center justify-end rounded-lg ">
               <img src={car2} alt="car2" className="w-[80%] rounded-lg" />
-            </div>{" "}
+            </div>
             <div className="w-[90%] flex items-end rounded-lg">
               <img src={house4} alt="car3" className="w-[80%] rounded-lg" />
-            </div>{" "}
+            </div>
             <div className="w-[90%] rounded-lg">
               <img src={car5} alt="car4" className="  rounded-lg" />
-            </div>{" "}
+            </div>
           </div>
         </div>
       </div>

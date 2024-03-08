@@ -31,29 +31,15 @@ const Consultation = () => {
 function Footer() {
   return (
     <>
-      <Consultation />
-      <div className="flex justify-center py-5 border-b-2 border-gray-400">
-        <div className="flex flex-col gap-5 w-[90vw] items-start md:items-center md:gap-10 md:flex-row">
+      <div className="flex justify-center py-5 border-b-2 border-gray-400 w-full bg-[#444c5c] text-white">
+        <div className="flex flex-col w-[90vw] items-start justify-between md:items-center md:flex-row">
           <div className="w-full h-full flex items-stat justify-center md:w-[20vw]">
-            <img src={logo2} alt="logo2" className="w-full" />
-          </div>
-          <div className="flex flex-col items-start gap-4 justify-start h-full w-full md:w-[10vw] p-4">
-            <h1 className="flex items-start justify-start gap-2 text-nowrap w-full md:items-center md:justify-center">
-              <img src={logo} alt="logo" className="w-[2vw]" />{" "}
-              <span className="font-bold text-xl md:text-xl">Quick links</span>
-            </h1>
-            <ul className="flex flex-col gap-2 md:text-xl">
-              <li>Testimonials</li>
-              <li>Services</li>
-              <li>Our team</li>
-            </ul>
-
-            {/* <img src={logo2} alt="" className="w-[8vw]" /> */}
+            <img src={logo2} alt="logo2" className="md:w-full" />
           </div>
           {footerLinks.map((details) => (
             <div
               key={details.id}
-              className="flex flex-col items-start justify-start gap-4 h-full w-full  p-4 md:w-auto"
+              className="flex flex-col items-start justify-start gap-4 h-full w-full p-4 md:w-auto"
             >
               <h1 className="font-bold text-xl md:text-3xl">{details.title}</h1>
               <div className="flex flex-col gap-2">
@@ -68,7 +54,7 @@ function Footer() {
           ))}
         </div>
       </div>
-      <div className="flex py-5 w-[90vw] text-xl font-bold md:text-2xl justify-center">
+      <div className="flex py-5 w-full text-white bg-[#444c5c] text-xl font-bold md:text-2xl justify-center">
         <h1> &copy; CCIC All Rights Reserved.</h1>
       </div>
     </>

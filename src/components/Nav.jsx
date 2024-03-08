@@ -8,31 +8,27 @@ export default function Nav() {
   const handleDropDown = () => setDropDown(!dropDown);
 
   return (
-    <>
+    <div className="h-full">
       <div className={`flex justify-center ${dropDown ? "hidden" : ""}`}>
-        <div className="flex w-[90vw] py-5 justify-between items-center">
+        <div className="flex w-[90vw] justify-between items-center">
           <h2 className="text-black font-bold text-3xl justify-center">
-            <img src={logo} alt="" className="w-[4vw]" />{" "}
+            <img src={logo} alt="" className="w-[8vw] md:w-[4vw]" />
             <span className="text-logo1Color">CI</span>
             <span className="text-logo2Color">CC</span>
           </h2>
-          <div className="flex items-center gap-7">
-            <h2 className="font-semibold hidden text-xm text-black md:block">
-              Home
-            </h2>
-            <h2 className="font-semibold hidden text-xm text-gray-400 md:block">
+          <div className="flex items-center gap-7 text-2xl">
+            <h2 className="font-semibold hidden text-black md:block">Home</h2>
+            <h2 className="font-semibold hidden text-gray-400 md:block">
               Feature
             </h2>
-            <h2 className="font-semibold hidden text-xm text-gray-400 md:block">
+            <h2 className="font-semibold hidden text-gray-400 md:block">
               How it works
             </h2>
-            <h2 className="font-semibold hidden text-xm text-gray-400 md:block">
+            <h2 className="font-semibold hidden text-gray-400 md:block">
               Goal & Mission
             </h2>
-            <h2 className="font-semibold hidden text-xm text-gray-400">
-              About
-            </h2>
-            <h2 className="p-1 px-4 font-semibold text-xm bg-blue-500 rounded-md text-white">
+            <h2 className="font-semibold hidden text-gray-400">About</h2>
+            <h2 className="p-1 px-4 font-semibold bg-[#2E3192] rounded-md text-white">
               Contact
             </h2>
             <FaAlignJustify
@@ -67,6 +63,6 @@ export default function Nav() {
           About
         </a>
       </div>
-    </>
+    </div>
   );
 }

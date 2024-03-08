@@ -9,7 +9,7 @@ import { FaPhone } from "react-icons/fa6";
 
 const explore = [
   {
-    icon: <MdLocationPin />,
+    icon: <MdLocationPin size={25} />,
     text: "359 Manchester St A Greenville, NC 27834, United States",
     id: 1,
   },
@@ -20,20 +20,20 @@ const explore = [
 
 export const H1 = ({ text }) => {
   return (
-    <h1 className="text-2xl md:text-5xl">
+    <h1 className="text-2xl md:text-4xl">
       <strong>{text}</strong>
     </h1>
   );
 };
 export const P = ({ text }) => {
-  return <p className="text-2xl font-normal md:text-3xl">{text}</p>;
+  return <p className="text-xl font-normal md:text-2xl">{text}</p>;
 };
 
 function LearnMore() {
   return (
-    <div className="flex justify-center my-3">
+    <div className="flex justify-center py-10 w-full bg-[#f6f6f6]">
       <main className="flex flex-col justify-between items-center gap-1 w-[90vw] md:flex-row md:gap-5">
-        <div className="flex-1 grid grid-cols-3 gap-4 p-5 h-[90%]">
+        <div className="flex-1 flex items-center grid grid-cols-3 py-6 gap-4 h-[90%] md:py-0">
           <div className="col-span-2 h-full">
             <img src={fam1} alt="fam1" className="h-full rounded-lg" />
           </div>
@@ -43,24 +43,24 @@ function LearnMore() {
           </div>
         </div>
         <div className="flex-1 flex flex-col gap-5 p-5">
-          <h1 className="text-2xl md:text-5xl">
+          <h1 className="text-2xl md:text-4xl">
             <strong>New to Insurance? No Problem</strong>
           </h1>
-          <p className="text-2xl font-normal md:text-3xl">
+          <p className="text-xl font-normal md:text-2xl">
             We have helped over <strong>450+</strong> client secure their lives
             and properties while they focus on what matters
           </p>
           <button className="self-start flex gap-2 justify-center items-center h-[8vh] px-5 bg-blue-700 text-white text-2xl rounded-lg">
             <strong>Get in touch</strong> <IoIosArrowDown />
           </button>
-          <ul className="">
+          <ul className="font-semibold md:text-xl">
             {explore.map((exp) => {
               return (
                 <li
                   key={exp.id}
-                  className="flex items-center justify-start gap-5 p-2 md:text-xl"
+                  className="flex items-center justify-start gap-5 p-2"
                 >
-                  <span>{exp.icon}</span> <strong>{exp.text}</strong>
+                  <span>{exp.icon}</span> <span>{exp.text}</span>
                 </li>
               );
             })}

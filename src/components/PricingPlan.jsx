@@ -6,12 +6,12 @@ import { GiThreeLeaves } from "react-icons/gi";
 export default function PricingPlan() {
   const type = true;
   return (
-    <>
-      <div className="w-[60vw] my-10 text-center md:w-[50%]">
-        <h2 className="py-3 text-2xl font-semibold md:text-5xl">
+    <div className="flex flex-col items-center py-10">
+      <div className="w-[60vw] text-center md:w-[50%] mb-8">
+        <h2 className="py-3 text-2xl md:text-4xl">
           <strong>Insurance Pricing Plan</strong>
         </h2>
-        <p className="text-center text-gray-800 text-sm font-normal md:text-2xl">
+        <p className="text-center text-gray-800 text-xl font-normal md:text-2xl">
           Our best plans for every goal in life Lorem ipsum dolor sit amet,
           consetetur sadipscing
         </p>
@@ -58,6 +58,6 @@ export default function PricingPlan() {
           <GiThreeLeaves size={60} />
         </Box>
       </div>
-    </>
+    </div>
   );
 }

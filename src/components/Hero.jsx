@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <div className="flex justify-center my-4 h-[100vh]">
+    <div className="flex justify-center mt-4 h-[100vh]">
       <div
         className={`w-[100vw] bg-[url('/src/assets/images/house3.jpg')] bg-cover bg-center relative md:w-[90vw] md:rounded-lg`}
       >

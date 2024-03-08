@@ -7,7 +7,7 @@ import { TbBus } from "react-icons/tb";
 
 export default function Service() {
   return (
-    <div className="flex justify-center flex-wrap w-[90vw]">
+    <div className="flex justify-center py-10 w-full flex-wrap w-[90vw]">
       <ServiceBox heading="Tour Insurance" signColor="bg-blue-300">
         <TbBus size={60} />
       </ServiceBox>
