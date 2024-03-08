@@ -14,7 +14,7 @@ export default function App() {
       <div className="h-[12%] md:h-[15%] py-3  border-b-2 border-gray-400">
         <Nav />
       </div>
-      <div className="h-[88vh] overflow-y-scroll remove-scrollbar">
+      <div className="h-[82.7vh] overflow-y-scroll remove-scrollbar !scroll-smooth">
         <Hero />
         <div className="flex flex-col items-center mt-4">
           <Service />

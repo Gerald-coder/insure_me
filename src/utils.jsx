@@ -62,7 +62,7 @@ export const clients = [
   {
     img: client3,
     id: 3,
-    desc: "I recently filed a claim with CCIC-Groups and was impressed by their efficiency and prompt assistance throughout the straightforward process. Thank you, CCIC-Groups, for your exceptional service!",
+    desc: "I recently filed a claim with CCIC-Groups and was impressed by their efficiency and prompt assistance throughout the straightforward process.",
     rating: <FaStar color="yellow" />,
     name: "Sarah T",
   },

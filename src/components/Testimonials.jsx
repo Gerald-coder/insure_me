@@ -12,7 +12,7 @@ const Clients = () => {
   return (
     <section className="flex justify-center h-auto p-2 bg-Gray w-full">
       <div className="p-2 flex flex-col items-center justify-center w-[90vw] h-full md:gap-5">
-        <div className="w-[60vw] my-10 text-center md:w-[50%]">
+        <div className="w-[60vw] my-10 text-center md:w-[50%] flex flex-col gap-4">
           <H1 text="This is what our clients have to say" />
 
           <p className="text-center text-gray-800 text-sm font-normal md:text-2xl">
@@ -45,7 +45,10 @@ const Clients = () => {
 function Testimonials() {
   return (
     <>
-      <div className="flex justify-center h-[70vh] p-2 bg-Gray  w-full">
+      <div
+        className="flex justify-center h-[70vh] p-2 bg-Gray  w-full"
+        id="about"
+      >
         <div className="p-2 flex flex-col items-center justify-between w-[90vw] h-full md:flex-row gap-9">
           <div className="flex-1 flex flex-col gap-5">
             <H1 text="Why Trust Us?" />

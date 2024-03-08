@@ -1,7 +1,6 @@
 import fam1 from "../assets/images/fam1.webp";
 import child from "../assets/images/child.webp";
 import cars2 from "../assets/images/cars2.webp";
-import { IoIosArrowDown } from "react-icons/io";
 import { MdLocationPin } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 
@@ -31,9 +30,9 @@ export const P = ({ text }) => {
 
 function LearnMore() {
   return (
-    <div className="flex justify-center py-10 w-full bg-[#f6f6f6]">
+    <div className="flex justify-center py-10 w-full bg-[#f6f6f6]" id="learn-more">
       <main className="flex flex-col justify-between items-center gap-1 w-[90vw] md:flex-row md:gap-5">
-        <div className="flex-1 flex items-center grid grid-cols-3 py-6 gap-4 h-[90%] md:py-0">
+        <div className="flex-1 items-center grid grid-cols-3 py-6 gap-4 h-[90%] md:py-0">
           <div className="col-span-2 h-full">
             <img src={fam1} alt="fam1" className="h-full rounded-lg" />
           </div>
@@ -44,15 +43,17 @@ function LearnMore() {
         </div>
         <div className="flex-1 flex flex-col gap-5 p-5">
           <h1 className="text-2xl md:text-4xl">
-            <strong>New to Insurance? No Problem</strong>
+            <strong>New to Insurance? Ready to get started?</strong>
           </h1>
           <p className="text-xl font-normal md:text-2xl">
-            We have helped over <strong>450+</strong> client secure their lives
-            and properties while they focus on what matters
+            Contact us today to speak with an insurance specialist and receive a
+            personalized quote.
           </p>
-          <button className="self-start flex gap-2 justify-center items-center h-[8vh] px-5 bg-blue-700 text-white text-2xl rounded-lg">
-            <strong>Get in touch</strong> <IoIosArrowDown />
-          </button>
+          <p className="text-xl font-normal md:text-2xl text-[#F1592A]">
+            Visit our office or reach out to us via phone or email. We look
+            forward to serving you!
+          </p>
+
           <ul className="font-semibold md:text-xl">
             {explore.map((exp) => {
               return (
