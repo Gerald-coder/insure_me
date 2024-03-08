@@ -5,7 +5,10 @@ import logo from "../assets/images/logo.png";
 
 export default function Nav() {
   const [dropDown, setDropDown] = useState(false);
-  const handleDropDown = () => setDropDown(!dropDown);
+  const handleDropDown = () => {
+    console.log("love");
+    setDropDown(!dropDown);
+  };
 
   return (
     <div className="h-full">
@@ -40,28 +43,37 @@ export default function Nav() {
         </div>
       </div>
       <div
-        className={`flex ${
-          dropDown ? "" : "hidden"
-        } flex-col items-center gap-3 py-8 bg-blue-400 text-white z-10 relative`}
+        className={`absolute top-0  w-full z-10 ${
+          dropDown ? "" : "pointer-events-none"
+        }`}
       >
-        <button className="absolute right-4 top-2 w-9" onClick={handleDropDown}>
-          <IoClose size={30} />
-        </button>
-        <a href="/details/New" className="font-semibold text-sm px-3">
-          Home
-        </a>
-        <a href="/details/Women" className="font-semibold text-sm px-3">
-          Feature
-        </a>
-        <a href="/details/Men" className="font-semibold text-sm px-3">
-          How it works
-        </a>
-        <a href="/details/Jewelry" className="font-semibold text-sm px-3">
-          Goal & Mission
-        </a>
-        <a href="/details/Watches" className="font-semibold text-sm px-3">
-          About
-        </a>
+        <div
+          className={`flex ${
+            dropDown ? "transform translate-x-0" : "transform -translate-x-full"
+          } flex-col items-center gap-3 py-8 bg-blue-400 text-white relative transition-transform duration-300`}
+        >
+          <button
+            className="absolute right-4 top-2 w-9"
+            onClick={handleDropDown}
+          >
+            <IoClose size={30} />
+          </button>
+          <a href="/details/New" className="font-semibold text-sm px-3">
+            Home
+          </a>
+          <a href="/details/Women" className="font-semibold text-sm px-3">
+            Feature
+          </a>
+          <a href="/details/Men" className="font-semibold text-sm px-3">
+            How it works
+          </a>
+          <a href="/details/Jewelry" className="font-semibold text-sm px-3">
+            Goal & Mission
+          </a>
+          <a href="/details/Watches" className="font-semibold text-sm px-3">
+            About
+          </a>
+        </div>
       </div>
     </div>
   );
