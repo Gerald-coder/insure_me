@@ -21,7 +21,7 @@ export default function PricingPlan() {
           type={type}
           heading="Family Protection"
           desc="Covers your personal belongings (furniture, clothing, electronics, etc.) if they're damaged or stolen"
-          buttonColor="bg-red-400"
+          buttonColor="bg-[#2E3192]"
         >
           <MdOutlineFamilyRestroom size={60} />
         </Box>
@@ -29,7 +29,7 @@ export default function PricingPlan() {
           type={type}
           heading="Hospital Protection"
           desc="Covers your personal belongings (furniture, clothing, electronics, etc.) if they're damaged or stolen"
-          buttonColor="bg-green-400"
+          buttonColor="bg-[#2E3192]"
         >
           <BsHeartPulse size={60} />
         </Box>
@@ -37,7 +37,7 @@ export default function PricingPlan() {
           type={type}
           heading="Check Suitability"
           desc="Covers your personal belongings (furniture, clothing, electronics, etc.) if they're damaged or stolen"
-          buttonColor="bg-blue-400"
+          buttonColor="bg-[#2E3192]"
         >
           <GiThreeLeaves size={60} />
         </Box>
@@ -45,7 +45,7 @@ export default function PricingPlan() {
           type={type}
           heading="Hospital Protection"
           desc="Covers your personal belongings (furniture, clothing, electronics, etc.) if they're damaged or stolen"
-          buttonColor="bg-green-400"
+          buttonColor="bg-[#2E3192]"
         >
           <BsHeartPulse size={60} />
         </Box>
@@ -53,7 +53,7 @@ export default function PricingPlan() {
           type={type}
           heading="Check Suitability"
           desc="Covers your personal belongings (furniture, clothing, electronics, etc.) if they're damaged or stolen"
-          buttonColor="bg-red-400"
+          buttonColor="bg-[#2E3192]"
         >
           <GiThreeLeaves size={60} />
         </Box>
