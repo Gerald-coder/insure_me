@@ -13,10 +13,10 @@ export default function Box({
 }) {
   return (
     <div
-      className={`${bgColor} flex justify-center w-[40vw] mx-2 my-2 min-h-[50vh] border-2 border-gray-300 rounded-lg md:w-[16vw]`}
+      className={`${bgColor} flex justify-center w-[70vw] mx-2 my-2 min-h-[50vh] border-2 border-gray-300 rounded-lg md:w-[16vw]`}
     >
       <div className="flex flex-col my-3 px-2 items-center justify-between">
-        <h2 className="font-bold text-base text-center">{heading}</h2>
+        <h2 className="font-bold text-xl text-center">{heading}</h2>
         {type ? (
           <div className="py-1">{children}</div>
         ) : (
@@ -26,20 +26,21 @@ export default function Box({
             className="w-[12vw] md:w-[6vw] h-[10vh] rounded-[50%]"
           />
         )}
-        <p className="text-center text-gray-800 text-sm font-normal">{desc}</p>
+        <p className="text-center text-gray-800 text-lg font-normal">{desc}</p>
         {type ? (
-          <button
+          <a
             className={`py-2 px-4 ${buttonColor} text-white font-semibold text-xm rounded-lg`}
+            href="https://t.me/CCICGROUPS"
+            target="_blank"
           >
             Choose Plan
-          </button>
+          </a>
         ) : (
-          <button className="flex gap-1">
-            <span className="text-yellow-400">{rating}</span>
-            <span className="text-yellow-400">{rating}</span>
-            <span className="text-yellow-400 fill-yellow-400">{rating}</span>
-            <span className="">{rating}</span>
-          </button>
+          <div>
+            {rating.map((rate, ind) => (
+              <button key={ind}> {rate}</button>
+            ))}
+          </div>
         )}
       </div>
     </div>

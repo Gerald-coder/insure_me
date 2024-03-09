@@ -11,12 +11,12 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <>
-      <div className="h-[12vh] md:h-[15vh]  border-b-2 border-gray-400">
+      <div className="h-[12%] md:h-[15%] py-3  border-b-2 border-gray-400">
         <Nav />
       </div>
-      <div className="h-[87vh] overflow-y-scroll remove-scrollbar">
+      <div className="h-[84vh] overflow-y-scroll remove-scrollbar !scroll-smooth">
         <Hero />
-        <div className="flex flex-col items-center my-4">
+        <div className="flex flex-col items-center mt-4">
           <Service />
           <LearnMore />
           <WhatWeDo />
