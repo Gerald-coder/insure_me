@@ -7,6 +7,7 @@ import lady from "../assets/images/lady.jpg";
 import { clients } from "../utils";
 import Box from "./Box";
 
+
 const Clients = () => {
   const type = false;
   return (
@@ -43,6 +44,7 @@ const Clients = () => {
 };
 
 function Testimonials() {
+ 
   return (
     <>
       <div
@@ -50,7 +52,10 @@ function Testimonials() {
         id="about"
       >
         <div className="p-2 flex flex-col items-center justify-between w-[90vw] h-full md:flex-row gap-9">
-          <div className="flex-1 flex flex-col gap-5">
+          <div
+            className="flex-1 flex flex-col gap-5"
+            
+          >
             <H1 text="Why Trust Us?" />
             <P
               text={

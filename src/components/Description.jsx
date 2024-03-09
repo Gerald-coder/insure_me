@@ -1,5 +1,4 @@
-import React from "react";
-
+/* eslint-disable */
 export default function Description({ heading, desc }) {
   return (
     <div className="my-2 px-2 py-1 rounded-lg">

@@ -64,7 +64,11 @@ export default function Nav() {
             >
               About
             </a>
-            <a className="p-1 px-4 font-semibold bg-[#2E3192] rounded-md text-white">
+            <a
+              className="p-1 px-4 font-semibold bg-[#2E3192] rounded-md text-white cursor-pointer"
+              href="https://t.me/CCICGROUPS"
+              target="_blank"
+            >
               Get Quote
             </a>
             <FaAlignJustify

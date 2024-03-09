@@ -28,18 +28,19 @@ export default function Box({
         )}
         <p className="text-center text-gray-800 text-lg font-normal">{desc}</p>
         {type ? (
-          <button
+          <a
             className={`py-2 px-4 ${buttonColor} text-white font-semibold text-xm rounded-lg`}
+            href="https://t.me/CCICGROUPS"
+            target="_blank"
           >
             Choose Plan
-          </button>
+          </a>
         ) : (
-          <button className="flex gap-1">
-            <span>{rating}</span>
-            <span>{rating}</span>
-            <span>{rating}</span>
-            <span className="">{rating}</span>
-          </button>
+          <div>
+            {rating.map((rate, ind) => (
+              <button key={ind}> {rate}</button>
+            ))}
+          </div>
         )}
       </div>
     </div>
