@@ -1,0 +1,38 @@
+{
+  "navHome": "Hogar",
+  "navReach": "Alcanzar",
+  "navServices": "Servicios",
+  "navPlan": "plan",
+  "navAbout": "Acerca de",
+  "navQuote": "Cita",
+
+  "heroH1": "Seguro de calidad con Coastal-Groups",
+  "heroFirstParagraph": "Desde seguros médicos y de automóvil hasta seguros de vida y de hogar, lo tenemos cubierto.",
+  "heroSecondParagraph": "Somos una de las empresas líderes, ofreciendo una gama de soluciones de seguros individuales y grupales que satisfacen las necesidades de los clientes.",
+
+  "serviceAutoHeader": "Seguro de auto",
+  "serviceAutoParagraph": "Plan Auto Seguro",
+
+  "serviceHealthHeader": "Seguro de salud",
+  "serviceHealthParagraph": "Vida saludable",
+
+  "serviceTravelHeader": "Seguro de viaje",
+  "serviceTravelParagraph": "viaje seguro",
+
+  "serviceHomeHeader": "Seguro de hogar",
+  "serviceHomeParagraph": "Vive seguro",
+
+  "learnMoreHeader": "¿Nuevo en seguros? ¿Listo para comenzar?",
+  "learnMoreFirstParagraph": "Contáctenos hoy para hablar con un especialista en seguros y recibir una cotización personalizada.",
+  "learnMoreSecondParagraph": "Visite nuestra oficina o comuníquese con nosotros por teléfono o correo electrónico. ¡Esperamos poder servirle!",
+
+  "whatWeDoHeader1": "Le quitamos el trabajo de las manos",
+  "whatWeDoHeading1": "Seguro de salud",
+  "whatWeDodescription1": "Cobertura integral de gastos médicos, hospitalización y más.",
+
+  "whatWeDoHeading2": "Seguro de hogar",
+  "whatWeDodescription2": "Proteja su hogar y sus pertenencias contra eventos inesperados como incendios, robos y desastres naturales.",
+
+  "whatWeDoHeading3": "Seguro de auto",
+  "whatWeDodescription3": "Conduzca con confianza Ofrecemos una variedad de opciones de seguro de automóvil para proteger su vehículo y brindarle seguridad financiera en caso de accidentes."
+}

@@ -4,6 +4,7 @@ import { MdLocationPin } from "react-icons/md";
 import { footerLinks } from "../utils";
 import logo from "../assets/images/logo.png";
 import logo2 from "../assets/images/logo2.png";
+import { useTranslation } from "react-i18next";
 
 const Consultation = () => {
   return (
@@ -31,6 +32,8 @@ const Consultation = () => {
 };
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="flex justify-center py-5 border-b-2 border-gray-400 w-full bg-[#444c5c] text-white">

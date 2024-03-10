@@ -1,0 +1,38 @@
+{
+  "navHome": "Home",
+  "navReach": "Reach Out",
+  "navServices": "Services",
+  "navPlan": "Plan",
+  "navAbout": "About",
+  "navQuote": "Get Quote",
+
+  "heroH1": "Quality Insurance with Coastal-Groups",
+  "heroFirstParagraph": "From health and auto insurance to life and home insurance, we've got you covered.",
+  "heroSecondParagraph": "We are one of the leading companies, offering a range of individual and group insurance solutions that meet clients needs.",
+
+  "serviceAutoHeader": "Auto Insurance",
+  "serviceAutoParagraph": "Safe Auto plan",
+
+  "serviceHealthHeader": "Health Insurance",
+  "serviceHealthParagraph": "Healthy Living",
+
+  "serviceTravelHeader": "Travel Insurance",
+  "serviceTravelParagraph": "travel Safe",
+
+  "serviceHomeHeader": "Home Insurance",
+  "serviceHomeParagraph": "Live safe",
+
+  "learnMoreHeader": "New to Insurance? Ready to get started?",
+  "learnMoreFirstParagraph": "Contact us today to speak with an insurance specialist and receive a personalized quote.",
+  "learnMoreSecondParagraph": "Visit our office or reach out to us via phone or email. We look forward to serving you!",
+
+  "whatWeDoHeader": "We take the work off your hands",
+  "whatWeDoHeading1": "Health Insurance",
+  "whatWeDodescription1": "Comprehensive coverage for medical expenses, hospitalization, and more.",
+
+  "whatWeDoHeading2": "Home Insurance",
+  "whatWeDodescription2": "Safeguard your home and belongings against unexpected events like fire, theft, and natural disasters.",
+
+  "whatWeDoHeading3": "Auto Insurance",
+  "whatWeDodescription3": "Drive with Confidence We offer a range of auto insurance options to protect your vehicle and provide financial security in case of accidents"
+}

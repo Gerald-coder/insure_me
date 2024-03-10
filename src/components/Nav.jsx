@@ -2,12 +2,32 @@ import { useState } from "react";
 import { FaAlignJustify } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import logo from "../assets/images/logo.png";
+import { useTranslation } from "react-i18next";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 export default function Nav() {
+  const { t, i18n } = useTranslation();
   const [dropDown, setDropDown] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
   const handleDropDown = () => setDropDown(!dropDown);
   const updateActiveLink = (e) => setActiveLink(e.target.id || activeLink);
+
+  const [lngs] = useState({
+    en: { nativeName: "eng", name: "EN" },
+    es: { nativeName: "span", name: "ES" },
+    pt: { nativeName: "port", name: "PT" },
+  });
+  const [curLng, setCurLng] = useState(
+    i18n.language === "en"
+      ? "eng"
+      : i18n.language === "pt"
+      ? "port"
+      : i18n.language === "es"
+      ? "span"
+      : ""
+  );
+  const [showLanguages, setShowlanguages] = useState(false);
+  // console.log(i18n);
 
   return (
     <div className="h-full" onClick={updateActiveLink}>
@@ -26,7 +46,7 @@ export default function Nav() {
               href="#hero"
               id="home"
             >
-              Home
+              {t("navHome")}
             </a>
             <a
               className={`font-semibold hidden ${
@@ -35,7 +55,7 @@ export default function Nav() {
               href="#learn-more"
               id="reach-out"
             >
-              Reach Out
+              {t("navReach")}
             </a>
             <a
               href="#services"
@@ -44,7 +64,7 @@ export default function Nav() {
               } md:block`}
               id="service"
             >
-              Services
+              {t("navServices")}
             </a>
             <a
               className={`font-semibold hidden ${
@@ -52,8 +72,12 @@ export default function Nav() {
               } md:block`}
               href="#plan"
               id="choose-plan"
+              // onClick={() => {
+              //   i18n.changeLanguage("es");
+              //   setCurLng(lngs.es.name);
+              // }}
             >
-              Choose Plan
+              {t("navPlan")}
             </a>
             <a
               className={`font-semibold hidden ${
@@ -61,16 +85,31 @@ export default function Nav() {
               } md:block`}
               href="#about"
               id="abt"
+              // onClick={() => {
+              //   i18n.changeLanguage("pt");
+              //   setCurLng(lngs.pt.name);
+              // }}
             >
-              About
+              {t("navAbout")}
             </a>
             <a
-              className="p-1 px-4 font-semibold bg-[#2E3192] rounded-md text-white cursor-pointer"
+              className="p-1 px-4 font-semibold bg-[#2E3192] rounded-md text-white cursor-pointer text-xl md:text-2xl"
               href="https://t.me/CCICGROUPS"
               target="_blank"
             >
-              Get Quote
+              {t("navQuote")}{" "}
             </a>
+            <button
+              onClick={() => {
+                setShowlanguages(!showLanguages);
+              }}
+              className="flex gap-2 items-center w-[80px] h-[40px] cursor-pointers"
+            >
+              {curLng}{" "}
+              <span className="bold text-2xl ml-0">
+                <MdOutlineKeyboardArrowDown />
+              </span>
+            </button>
             <FaAlignJustify
               size={25}
               id="quote"
@@ -79,6 +118,28 @@ export default function Nav() {
             />
           </div>
         </div>
+        {/* langs */}
+        {showLanguages && (
+          <div className="absolute right-16 top-28 flex flex-col items-center justify-center bg-slate-400  h-auto shadow-dropDownShadow rounded-md animate-slide-bottom w-40 py-2 z-10">
+            {Object.keys(lngs).map((text) => {
+              return (
+                <p
+                  className={`mb-3 cursor-pointer ${
+                    i18n.language === text && "font-extrabold"
+                  }`}
+                  key={text}
+                  onClick={() => {
+                    i18n.changeLanguage(text);
+                    setCurLng(lngs[text].nativeName);
+                    setShowlanguages(false);
+                  }}
+                >
+                  {lngs[text].nativeName}
+                </p>
+              );
+            })}
+          </div>
+        )}
       </div>
       <div
         className={`absolute w-full top-0 z-10 ${

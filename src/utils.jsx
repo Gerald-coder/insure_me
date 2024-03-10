@@ -21,7 +21,7 @@ export const footerLinks = [
   },
   {
     title: "Features",
-    id: 1,
+    id: 2,
     items: [
       { id: 1, item: "Business Marketing" },
       { id: 2, item: "User Analytics" },
@@ -31,7 +31,7 @@ export const footerLinks = [
   },
   {
     title: "Get in touch",
-    id: 2,
+    id: 3,
     items: [
       {
         id: 1,
