@@ -55,8 +55,8 @@ export default function PricingPlan() {
 
         <Box
           type={type}
-          heading=""
-          desc="Helps pet owners manage the costs of pet healthcare and ensures that their furry companions receive the necessary medical attention"
+          heading={t("insuranceServicesHeading5")}
+          desc={t("insuranceServicesDescription5")}
           buttonColor="bg-[#2E3192]"
         >
           <GiSittingDog size={60} color="#F1592A" />

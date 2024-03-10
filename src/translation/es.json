@@ -39,18 +39,19 @@
   "insuranceServiceHeader": "Servicios de seguros",
   "insuranceServiceParagraph": "Explore nuestros planes de seguro integrales diseñados para satisfacer sus necesidades y objetivos de vida únicos.",
 
-  "insuranceServicesHeading1": "",
-  "insuranceServicesDescription1": "",
+  "insuranceServicesHeading1": "Protección del hogar",
+  "insuranceServicesDescription1": "Protege su hogar y su contenido contra diversos riesgos, incluidos incendios, robos, desastres naturales y reclamaciones de responsabilidad.",
 
-  "insuranceServicesHeading2": "",
-  "insuranceServicesDescription2": "",
+  "insuranceServicesHeading2": "Protección de la vida",
+  "insuranceServicesDescription2": "Ofrece seguridad financiera y tranquilidad a tus seres queridos en caso de tu fallecimiento.",
 
-  "insuranceServicesHeading3": "",
-  "insuranceServicesDescription3": "",
+  "insuranceServicesHeading3": "Protección de viaje",
+  "insuranceServicesDescription3": "Brinda cobertura ante eventos inesperados que puedan alterar sus planes de viaje (cancelación de viaje, pérdida de equipaje, etc.)",
 
   "insuranceServicesHeading4": "Protección automática",
   "insuranceServicesDescription4": "Proporciona cobertura para sus vehículos contra daños causados ​​por accidentes, robo, vandalismo o desastres naturales.",
 
   "insuranceServicesHeading5": "protección corporativa",
-  "insuranceServicesDescription5": "Fornece cobertura abragente contra personas en organizaciones corporativas, empresas, acciones de individuos y personas por diante"
+  "insuranceServicesDescription5": "Fornece cobertura abragente contra personas en organizaciones corporativas, empresas, acciones de individuos y personas por diante",
+  "choosePlan": "Elige Plan"
 }

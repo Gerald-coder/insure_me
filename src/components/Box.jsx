@@ -1,4 +1,5 @@
 /* eslint-disable */
+import { useTranslation } from "react-i18next";
 
 export default function Box({
   children,
@@ -11,6 +12,7 @@ export default function Box({
   id,
   bgColor,
 }) {
+  const { t } = useTranslation();
   return (
     <div
       className={`${bgColor} flex justify-center w-[70vw] mx-2 my-2 min-h-[50vh] border-2 border-gray-300 rounded-lg md:w-[16vw]`}
@@ -33,7 +35,7 @@ export default function Box({
             href="https://t.me/CCICGROUPS"
             target="_blank"
           >
-            Choose Plan
+            {t("choosePlan")}
           </a>
         ) : (
           <div>
