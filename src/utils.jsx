@@ -33,7 +33,11 @@ export const footerLinks = [
     title: "Get in touch",
     id: 2,
     items: [
-      { id: 1, item: "+1 252-756-9956", icon: <FaPhone size={25} /> },
+      {
+        id: 1,
+        item: "+1 252-756-9956 ( currently unavailable )",
+        icon: <FaPhone size={25} />,
+      },
       { id: 2, item: "ccis-groups@hotmail.com", icon: <MdEmail size={25} /> },
       {
         id: 3,
