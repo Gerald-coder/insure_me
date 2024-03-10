@@ -27,12 +27,30 @@
   "learnMoreSecondParagraph": "Visit our office or reach out to us via phone or email. We look forward to serving you!",
 
   "whatWeDoHeader": "We take the work off your hands",
-  "whatWeDoHeading1": "Health Insurance",
-  "whatWeDodescription1": "Comprehensive coverage for medical expenses, hospitalization, and more.",
+  "whatWeDoHeading1": "Corporate insurance",
+  "whatWeDodescription1": "Comprehensive coverage against losses in corporate organizations, companies, individuals shares and so on",
 
   "whatWeDoHeading2": "Home Insurance",
   "whatWeDodescription2": "Safeguard your home and belongings against unexpected events like fire, theft, and natural disasters.",
 
   "whatWeDoHeading3": "Auto Insurance",
-  "whatWeDodescription3": "Drive with Confidence We offer a range of auto insurance options to protect your vehicle and provide financial security in case of accidents"
+  "whatWeDodescription3": "Drive with Confidence We offer a range of auto insurance options to protect your vehicle and provide financial security in case of accidents",
+
+  "insuranceServiceHeader": "Insurance Services",
+  "insuranceServiceParagraph": "Explore our comprehensive insurance plans tailored to meet your unique needs and life goals.",
+
+  "insuranceServicesHeading1": "Home Protection",
+  "insuranceServicesDescription1": "Safeguards your home and its contents against various risks, including fire, burglary, natural disasters, and liability claims.",
+
+  "insuranceServicesHeading2": "Life Protection",
+  "insuranceServicesDescription2": "Offers financial security and peace of mind to your loved ones in the event of your passing",
+
+  "insuranceServicesHeading3": "Travel Protection",
+  "insuranceServicesDescription3": "Provides coverage for unexpected events that may disrupt your travel plans (trip cancellation, baggage loss, etc)",
+
+  "insuranceServicesHeading4": "Auto Protection",
+  "insuranceServicesDescription4": "Provides coverage for your vehicles against damages caused by accidents, theft, vandalism, or natural disasters",
+
+  "insuranceServicesHeading5": "corporate protection",
+  "insuranceServicesDescription5": "Provides comprehensive coverage against losses in corporate organizations, companies, individuals shares and so on"
 }

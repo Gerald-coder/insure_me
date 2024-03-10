@@ -27,12 +27,30 @@
   "learnMoreSecondParagraph": "Visite nosso escritório ou entre em contato conosco por telefone ou e-mail. Estamos ansiosos para servi-lo!",
 
   "whatWeDoHeader": "Tiramos o trabalho das suas mãos",
-  "whatWeDoHeading1": "Plano de saúde",
-  "whatWeDodescription1": "Cobertura abrangente para despesas médicas, hospitalização e muito mais.",
+  "whatWeDoHeading1": "Seguro corporativo",
+  "whatWeDodescription1": "Cobertura abrangente contra perdas em organizações corporativas, empresas, ações de pessoas físicas e assim por diante",
 
   "whatWeDoHeading2": "Seguro Residencial",
   "whatWeDodescription2": "Proteja sua casa e seus pertences contra eventos inesperados como incêndio, roubo e desastres naturais.",
 
   "whatWeDoHeading3": "Seguro Automóvel",
-  "whatWeDodescription3": "Dirija com confiança Oferecemos uma gama de opções de seguro automóvel para proteger seu veículo e fornecer segurança financeira em caso de acidentes"
+  "whatWeDodescription3": "Dirija com confiança Oferecemos uma gama de opções de seguro automóvel para proteger seu veículo e fornecer segurança financeira em caso de acidentes",
+
+  "insuranceServiceHeader": "Serviços de seguros",
+  "insuranceServiceParagraph": "Explore nossos planos de seguro abrangentes, adaptados para atender às suas necessidades e objetivos de vida exclusivos.",
+
+  "insuranceServicesHeading1": "Proteção Doméstica",
+  "insuranceServicesDescription1": "Protege sua casa e seu conteúdo contra vários riscos, incluindo incêndio, roubo, desastres naturais e reclamações de responsabilidade.",
+
+  "insuranceServicesHeading2": "Proteção à Vida",
+  "insuranceServicesDescription2": "Oferece segurança financeira e tranquilidade aos seus entes queridos em caso de seu falecimento",
+
+  "insuranceServicesHeading3": "Proteção de viagens",
+  "insuranceServicesDescription3": "Oferece cobertura para eventos inesperados que possam atrapalhar seus planos de viagem (cancelamento de viagem, perda de bagagem, etc.)",
+
+  "insuranceServicesHeading4": "Proteção Automática",
+  "insuranceServicesDescription4": "Oferece cobertura para seus veículos contra danos causados ​​por acidentes, roubo, vandalismo ou desastres naturais",
+
+  "insuranceServicesHeading5": "proteção corporativa",
+  "insuranceServicesDescription5": "Fornece cobertura abrangente contra perdas em organizações corporativas, empresas, ações de indivíduos e assim por diante"
 }

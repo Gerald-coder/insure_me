@@ -27,12 +27,30 @@
   "learnMoreSecondParagraph": "Visite nuestra oficina o comuníquese con nosotros por teléfono o correo electrónico. ¡Esperamos poder servirle!",
 
   "whatWeDoHeader1": "Le quitamos el trabajo de las manos",
-  "whatWeDoHeading1": "Seguro de salud",
-  "whatWeDodescription1": "Cobertura integral de gastos médicos, hospitalización y más.",
+  "whatWeDoHeading1": "Seguro corporativo",
+  "whatWeDodescription1": "Cobertura integral contra pérdidas en acciones de organizaciones corporativas, empresas, individuos, etc.",
 
   "whatWeDoHeading2": "Seguro de hogar",
   "whatWeDodescription2": "Proteja su hogar y sus pertenencias contra eventos inesperados como incendios, robos y desastres naturales.",
 
   "whatWeDoHeading3": "Seguro de auto",
-  "whatWeDodescription3": "Conduzca con confianza Ofrecemos una variedad de opciones de seguro de automóvil para proteger su vehículo y brindarle seguridad financiera en caso de accidentes."
+  "whatWeDodescription3": "Conduzca con confianza Ofrecemos una variedad de opciones de seguro de automóvil para proteger su vehículo y brindarle seguridad financiera en caso de accidentes.",
+
+  "insuranceServiceHeader": "Servicios de seguros",
+  "insuranceServiceParagraph": "Explore nuestros planes de seguro integrales diseñados para satisfacer sus necesidades y objetivos de vida únicos.",
+
+  "insuranceServicesHeading1": "",
+  "insuranceServicesDescription1": "",
+
+  "insuranceServicesHeading2": "",
+  "insuranceServicesDescription2": "",
+
+  "insuranceServicesHeading3": "",
+  "insuranceServicesDescription3": "",
+
+  "insuranceServicesHeading4": "Protección automática",
+  "insuranceServicesDescription4": "Proporciona cobertura para sus vehículos contra daños causados ​​por accidentes, robo, vandalismo o desastres naturales.",
+
+  "insuranceServicesHeading5": "protección corporativa",
+  "insuranceServicesDescription5": "Fornece cobertura abragente contra personas en organizaciones corporativas, empresas, acciones de individuos y personas por diante"
 }
