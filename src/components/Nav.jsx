@@ -120,12 +120,12 @@ export default function Nav() {
         </div>
         {/* langs */}
         {showLanguages && (
-          <div className="absolute right-16 top-28 flex flex-col items-center justify-center bg-slate-400  h-auto shadow-dropDownShadow rounded-md animate-slide-bottom w-40 py-2 z-10">
+          <div className="absolute right-16 top-28 flex flex-col items-center justify-center bg-slate-400 h-auto shadow-dropDownShadow rounded-md animate-slide-bottom w-40 py-2 z-10">
             {Object.keys(lngs).map((text) => {
               return (
                 <p
-                  className={`mb-3 cursor-pointer ${
-                    i18n.language === text && "font-extrabold"
+                  className={`mb-3 text-white cursor-pointer w-full flex items-center justify-center md:text-2xl ${
+                    i18n.language === text && "font-extrabold text-[#F1592A]"
                   }`}
                   key={text}
                   onClick={() => {
