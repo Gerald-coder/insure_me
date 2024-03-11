@@ -13,21 +13,33 @@ export default function Nav() {
   const updateActiveLink = (e) => setActiveLink(e.target.id || activeLink);
 
   const [lngs] = useState({
-    en: { nativeName: "eng", name: "EN" },
-    es: { nativeName: "span", name: "ES" },
-    pt: { nativeName: "port", name: "PT" },
+    en: {
+      nativeName: "English",
+      name: "EN",
+      flag: "https://flagcdn.com/w20/us.png",
+    },
+    es: {
+      nativeName: "Spanish",
+      name: "ES",
+      flag: "https://flagcdn.com/w20/es.png",
+    },
+    pt: {
+      nativeName: "Portuguese",
+      name: "PT",
+      flag: "https://flagcdn.com/w20/pt.png",
+    },
   });
-  const [curLng, setCurLng] = useState(
+
+  const [showLanguages, setShowlanguages] = useState(false);
+  const [curFlag, setCurFlag] = useState(
     i18n.language === "en"
-      ? "eng"
+      ? "https://flagcdn.com/w40/us.png"
       : i18n.language === "pt"
-      ? "port"
+      ? "https://flagcdn.com/w20/pt.png"
       : i18n.language === "es"
-      ? "span"
+      ? "https://flagcdn.com/w20/es.png"
       : ""
   );
-  const [showLanguages, setShowlanguages] = useState(false);
-  // console.log(i18n);
 
   return (
     <div className="h-full" onClick={updateActiveLink}>
@@ -38,7 +50,7 @@ export default function Nav() {
             <span className="text-logo1Color">CI</span>
             <span className="text-logo2Color">CC</span>
           </h2>
-          <div className="flex items-center gap-7 text-2xl">
+          <div className="flex items-center gap-2 text-2xl md:gap-7">
             <a
               className={`font-semibold hidden ${
                 activeLink == "home" ? "text-[#F1592A]" : "text-gray-400"
@@ -72,10 +84,6 @@ export default function Nav() {
               } md:block`}
               href="#plan"
               id="choose-plan"
-              // onClick={() => {
-              //   i18n.changeLanguage("es");
-              //   setCurLng(lngs.es.name);
-              // }}
             >
               {t("navPlan")}
             </a>
@@ -85,10 +93,6 @@ export default function Nav() {
               } md:block`}
               href="#about"
               id="abt"
-              // onClick={() => {
-              //   i18n.changeLanguage("pt");
-              //   setCurLng(lngs.pt.name);
-              // }}
             >
               {t("navAbout")}
             </a>
@@ -105,7 +109,13 @@ export default function Nav() {
               }}
               className="flex gap-2 items-center w-[80px] h-[40px] cursor-pointers"
             >
-              {curLng}{" "}
+              {/* {curLng} */}
+              <img
+                src={curFlag}
+                srcSet="https://flagcdn.com/w80/us.png 2x"
+                width="40"
+                alt="Spain"
+              />
               <span className="bold text-2xl ml-0">
                 <MdOutlineKeyboardArrowDown />
               </span>
@@ -120,22 +130,32 @@ export default function Nav() {
         </div>
         {/* langs */}
         {showLanguages && (
-          <div className="absolute right-16 top-28 flex flex-col items-center justify-center bg-slate-400 h-auto shadow-dropDownShadow rounded-md animate-slide-bottom w-40 py-2 z-10">
+          <div className="absolute right-5  top-28 flex flex-col items-start justify-center bg-slate-400 h-auto shadow-dropDownShadow rounded-md animate-slide-bottom w-44 p-3 z-10 md:right-10">
             {Object.keys(lngs).map((text) => {
               return (
-                <p
-                  className={`mb-3 text-white cursor-pointer w-full flex items-center justify-center md:text-2xl ${
-                    i18n.language === text && "font-extrabold text-[#F1592A]"
-                  }`}
+                <div
                   key={text}
-                  onClick={() => {
-                    i18n.changeLanguage(text);
-                    setCurLng(lngs[text].nativeName);
-                    setShowlanguages(false);
-                  }}
+                  className="w-full flex items-center justify-start gap-3 cursor-pointer"
                 >
-                  {lngs[text].nativeName}
-                </p>
+                  <img
+                    src={lngs[text].flag}
+                    srcSet={`https://flagcdn.com/w80/${text}.png 2x`}
+                    width="30"
+                    alt="Spain"
+                  />
+                  <p
+                    className={`mb-3 text-white md:text-xl ${
+                      i18n.language === text && "font-extrabold text-[#F1592A]"
+                    }`}
+                    onClick={() => {
+                      i18n.changeLanguage(text);
+                      setShowlanguages(false);
+                      setCurFlag(lngs[text].flag);
+                    }}
+                  >
+                    {lngs[text].nativeName}
+                  </p>
+                </div>
               );
             })}
           </div>
