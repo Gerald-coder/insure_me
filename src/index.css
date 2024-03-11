@@ -14,10 +14,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  scroll-behavior: smooth !important ;
-}
-
 * {
   margin: 0;
   box-sizing: border-box;

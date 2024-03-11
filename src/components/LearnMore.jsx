@@ -3,6 +3,8 @@ import child from "../assets/images/child.webp";
 import cars2 from "../assets/images/cars2.webp";
 import { MdLocationPin } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
 /* eslint-disable */
 
@@ -12,9 +14,8 @@ const explore = [
     text: "359 Manchester St A Greenville, NC 27834, United States",
     id: 1,
   },
-  { icon: <FaPhone />, text: "+1 252-756-9956", id: 2 },
-  { icon: <FaPhone />, text: "+1 252-756-9956", id: 3 },
-  { icon: <FaPhone />, text: "+1 252-756-9956", id: 4 },
+  { icon: <FaPhone size={25} />, text: "+1 252-756-9956", id: 2 },
+  { icon: <MdEmail size={25} />, text: "ccis-groups@hotmail.com", id: 3 },
 ];
 
 export const H1 = ({ text }) => {
@@ -29,8 +30,12 @@ export const P = ({ text }) => {
 };
 
 function LearnMore() {
+  const { t } = useTranslation();
   return (
-    <div className="flex justify-center py-10 w-full bg-[#f6f6f6]" id="learn-more">
+    <div
+      className="flex justify-center py-10 w-full bg-[#f6f6f6]"
+      id="learn-more"
+    >
       <main className="flex flex-col justify-between items-center gap-1 w-[90vw] md:flex-row md:gap-5">
         <div className="flex-1 items-center grid grid-cols-3 py-6 gap-4 h-[90%] md:py-0">
           <div className="col-span-2 h-full">
@@ -43,15 +48,13 @@ function LearnMore() {
         </div>
         <div className="flex-1 flex flex-col gap-5 p-5">
           <h1 className="text-2xl md:text-4xl">
-            <strong>New to Insurance? Ready to get started?</strong>
+            <strong>{t("learnMoreHeader")}</strong>
           </h1>
           <p className="text-xl font-normal md:text-2xl">
-            Contact us today to speak with an insurance specialist and receive a
-            personalized quote.
+            {t("learnMoreFirstParagraph")}
           </p>
           <p className="text-xl font-normal md:text-2xl text-[#F1592A]">
-            Visit our office or reach out to us via phone or email. We look
-            forward to serving you!
+            {t("learnMoreSecondParagraph")}
           </p>
 
           <ul className="font-semibold md:text-xl">
