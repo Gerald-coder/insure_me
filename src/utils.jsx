@@ -23,7 +23,7 @@ export const footerLinks = [
     title: "Features",
     id: 2,
     items: [
-      { id: 1, item: "Business Marketing" },
+      { id: 1, item: "Assured legal reimbursement" },
       { id: 2, item: "User Analytics" },
       { id: 3, item: "Unlimited Support" },
       { id: 4, item: "Client Satisfaction" },

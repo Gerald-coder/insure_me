@@ -53,5 +53,43 @@
 
   "insuranceServicesHeading5": "corporate protection",
   "insuranceServicesDescription5": "Provides comprehensive coverage against losses in corporate organizations, companies, individuals shares and so on",
-  "choosePlan": "Choose Plan"
+  "choosePlan": "Choose Plan",
+
+  "testimonialsHeader1": "Why Trust Us?",
+  "testimonialsParagraph1": "We have helped over half a thousands clients secure their life and assets, world wide, giving 100% satisfaction",
+  "testimonialClientText": "life insurance holder @ CCIC-Groups",
+
+  "testimonialsHeader2": "This is what our clients have to say",
+  "testimonialsParagraph2": "With CCIC-Groups, Our dedicated team is always here to assist you, providing personalized support every step of the way",
+
+  "client1name": "Davis L",
+  "client2name": "John M",
+  "client3name": "Sarah T",
+  "client4name": "Maria Curia",
+  "client5name": "",
+
+  "client1TestimonialDesc": "CCIC-Groups made insurance a breeze, guiding me through the process and ensuring comprehensive coverage for my family",
+  "client2TestimonialDesc": "Years with CCIC-Groups, never disappointed. Unmatched dedication to customer satisfaction and finding the perfect insurance solutions",
+  "client3TestimonialDesc": "I recently filed a claim with CCIC-Groups and was impressed by their efficiency and prompt assistance throughout the straightforward process.",
+  "client4TestimonialDesc": "CCIC-Groups truly cares about their clients and goes above and beyond to ensure their satisfaction. I'nothing but positive experiences with them",
+  "client5TestimonialDesc": "",
+
+  "footerLinkHeader1": "Quick links",
+  "footerLinkHeader2": "Features",
+  "footerLinkHeader3": "Get in touch",
+
+  "footer1linkParagraph1": "Testimonials",
+  "footer1linkParagraph2": "Services",
+  "footer1linkParagraph3": "Our Team",
+
+  "footer2linkParagraph1": "Assured legal reimbursement",
+  "footer2linkParagraph2": "User Analytics",
+  "footer2linkParagraph3": "Unlimited Support",
+  "footer2linkParagraph4": "Client Satisfaction",
+
+  "footer3linkParagraph1": "+1 252-756-9956 ( currently unavailable )",
+  "footer3inkParagraph2": "ccis-groups@hotmail.com",
+  "footer3linkParagraph3": "359 Manchester St A Greenville, NC 27834, United States",
+
+  "footerRighReserved": "CCIC All Rights Reserved."
 }
