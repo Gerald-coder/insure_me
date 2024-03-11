@@ -2,8 +2,8 @@
 
 import { MdLocationPin } from "react-icons/md";
 import { footerLinks } from "../utils";
-import logo from "../assets/images/logo.png";
 import logo2 from "../assets/images/logo2.png";
+import { useTranslation } from "react-i18next";
 
 const Consultation = () => {
   return (
@@ -31,6 +31,8 @@ const Consultation = () => {
 };
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="flex justify-center py-5 border-b-2 border-gray-400 w-full bg-[#444c5c] text-white">
@@ -38,26 +40,104 @@ function Footer() {
           <div className="w-full h-full flex items-stat justify-center md:w-[20vw]">
             <img src={logo2} alt="logo2" className="md:w-full" />
           </div>
-          {footerLinks.map((details) => (
-            <div
-              key={details.id}
-              className="flex flex-col items-start justify-start gap-4 h-full w-full p-4 md:w-auto"
-            >
-              <h1 className="font-bold text-xl md:text-3xl">{details.title}</h1>
-              <div className="flex flex-col gap-2">
-                {details.items.map((item) => (
-                  <p key={item.id} className="flex gap-2 md:text-xl">
-                    {item.icon && <span>{item.icon}</span>}
-                    {item.item}
-                  </p>
-                ))}
+          {footerLinks.map((details) => {
+            let footerHeader;
+            switch (details.id) {
+              case 1:
+                footerHeader = t("footerLinkHeader1");
+                break;
+              case 2:
+                footerHeader = t("footerLinkHeader2");
+                break;
+              case 3:
+                footerHeader = t("footerLinkHeader3");
+                break;
+              default:
+                footerHeader = details.title;
+                break;
+            }
+            return (
+              <div
+                key={details.id}
+                className="flex flex-col items-start justify-start gap-4 h-full w-full p-4 md:w-auto"
+              >
+                <h1 className="font-bold text-xl md:text-3xl">
+                  {footerHeader}
+                </h1>
+                <div className="flex flex-col gap-2">
+                  {details.items.map((item) => {
+                    let links;
+                    switch (details.id) {
+                      case 1:
+                        switch (item.id) {
+                          case 1:
+                            links = t("footer1linkParagraph1");
+                            break;
+                          case 2:
+                            links = t("footer1linkParagraph2");
+                            break;
+                          case 3:
+                            links = t("footer1linkParagraph3");
+                            break;
+                          default:
+                            links = item.item;
+                            break;
+                        }
+                        break;
+                      case 2:
+                        switch (item.id) {
+                          case 1:
+                            links = t("footer2linkParagraph1");
+                            break;
+                          case 2:
+                            links = t("footer2linkParagraph2");
+                            break;
+                          case 3:
+                            links = t("footer2linkParagraph3");
+                            break;
+                          case 4:
+                            links = t("footer2linkParagraph4");
+                            break;
+                          default:
+                            links = item.item;
+                            break;
+                        }
+                        break;
+                      case 3:
+                        switch (item.id) {
+                          case 1:
+                            links = t("footer3linkParagraph1");
+                            break;
+                          case 2:
+                            links = t("footer3linkParagraph2");
+                            break;
+                          case 3:
+                            links = t("footer3linkParagraph3");
+                            break;
+                          default:
+                            links = item.item;
+                            break;
+                        }
+                        break;
+                      default:
+                        links = details.title;
+                        break;
+                    }
+                    return (
+                      <p key={item.id} className="flex gap-2 md:text-xl">
+                        {item.icon && <span>{item.icon}</span>}
+                        {links}
+                      </p>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
       <div className="flex py-5 w-full text-white bg-[#444c5c] text-xl font-bold md:text-2xl justify-center">
-        <h1> &copy; CCIC All Rights Reserved.</h1>
+        <h1> &copy; {t("footerRighReserved")}</h1>
       </div>
     </>
   );

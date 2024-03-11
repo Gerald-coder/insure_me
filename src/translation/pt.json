@@ -1,0 +1,95 @@
+{
+  "navHome": "Lar",
+  "navReach": "Alcançar",
+  "navServices": "Serviços",
+  "navPlan": "plano",
+  "navAbout": "Sobre",
+  "navQuote": "Citar",
+
+  "heroH1": "Seguro de qualidade com grupos costeiros",
+  "heroFirstParagraph": "Desde seguros de saúde e automóveis até seguros de vida e residenciais, nós temos tudo o que você precisa.",
+  "heroSecondParagraph": "Somos uma das empresas líderes, oferecendo uma gama de soluções de seguros individuais e de grupo que atendem às necessidades dos clientes",
+
+  "serviceAutoHeader": "Seguro Automóvel",
+  "serviceAutoParagraph": "Plano Auto Seguro",
+
+  "serviceHealthHeader": "Plano de saúde",
+  "serviceHealthParagraph": "Vida Saudável",
+
+  "serviceTravelHeader": "Seguro de viagem",
+  "serviceTravelParagraph": "viagem segura",
+
+  "serviceHomeHeader": "Seguro Residencial",
+  "serviceHomeParagraph": "Viva em segurança",
+
+  "learnMoreHeader": "Novo em seguros? Pronto para começar?",
+  "learnMoreFirstParagraph": "Contate-nos hoje para falar com um especialista em seguros e receber um orçamento personalizado.",
+  "learnMoreSecondParagraph": "Visite nosso escritório ou entre em contato conosco por telefone ou e-mail. Estamos ansiosos para servi-lo!",
+
+  "whatWeDoHeader": "Tiramos o trabalho das suas mãos",
+  "whatWeDoHeading1": "Seguro corporativo",
+  "whatWeDodescription1": "Cobertura abrangente contra perdas em organizações corporativas, empresas, ações de pessoas físicas e assim por diante",
+
+  "whatWeDoHeading2": "Seguro Residencial",
+  "whatWeDodescription2": "Proteja sua casa e seus pertences contra eventos inesperados como incêndio, roubo e desastres naturais.",
+
+  "whatWeDoHeading3": "Seguro Automóvel",
+  "whatWeDodescription3": "Dirija com confiança Oferecemos uma gama de opções de seguro automóvel para proteger seu veículo e fornecer segurança financeira em caso de acidentes",
+
+  "insuranceServiceHeader": "Serviços de seguros",
+  "insuranceServiceParagraph": "Explore nossos planos de seguro abrangentes, adaptados para atender às suas necessidades e objetivos de vida exclusivos.",
+
+  "insuranceServicesHeading1": "Proteção Doméstica",
+  "insuranceServicesDescription1": "Protege sua casa e seu conteúdo contra vários riscos, incluindo incêndio, roubo, desastres naturais e reclamações de responsabilidade.",
+
+  "insuranceServicesHeading2": "Proteção à Vida",
+  "insuranceServicesDescription2": "Oferece segurança financeira e tranquilidade aos seus entes queridos em caso de seu falecimento",
+
+  "insuranceServicesHeading3": "Proteção de viagens",
+  "insuranceServicesDescription3": "Oferece cobertura para eventos inesperados que possam atrapalhar seus planos de viagem (cancelamento de viagem, perda de bagagem, etc.)",
+
+  "insuranceServicesHeading4": "Proteção Automática",
+  "insuranceServicesDescription4": "Oferece cobertura para seus veículos contra danos causados ​​por acidentes, roubo, vandalismo ou desastres naturais",
+
+  "insuranceServicesHeading5": "proteção corporativa",
+  "insuranceServicesDescription5": "Fornece cobertura abrangente contra perdas em organizações corporativas, empresas, ações de indivíduos e assim por diante",
+  "choosePlan": "Escolha o plano",
+
+  "testimonialsHeader1": "Por que confiar em nós?",
+  "testimonialsParagraph1": "Já ajudamos mais de meio milhar de clientes a proteger suas vidas e bens em todo o mundo, proporcionando 100% de satisfação",
+  "testimonialClientText": "titular de seguro de vida @ CCIC-Groups",
+
+  "testimonialsHeader2": "Isto é o que nossos clientes têm a dizer",
+  "testimonialsParagraph2": "Com CCIC-Groups, nossa equipe dedicada está sempre aqui para atendê-lo, fornecendo suporte personalizado em cada etapa do processo",
+
+  "client1name": "",
+  "client2name": "",
+  "client3name": "",
+  "client4name": "",
+  "client5name": "",
+
+  "client1TestimonialDesc": "O CCIC-Groups facilitou muito o seguro, orientando-me durante o processo e garantindo uma cobertura abrangente para minha família",
+  "client2TestimonialDesc": "Anos com Grupos CCIC, nunca decepcionados. Dedicação incomparável à satisfação do cliente e à busca das soluções de seguros perfeitas",
+  "client3TestimonialDesc": "Recentemente, registrei uma reclamação junto ao CCIC-Groups e fiquei impressionado com sua eficiência e assistência imediata durante todo o processo simples.",
+  "client4TestimonialDesc": "O CCIC-Groups realmente se preocupa com seus clientes e vai além para garantir sua satisfação. Não tenho nada além de experiências positivas com eles",
+  "client5TestimonialDesc": "",
+
+  "footerLinkHeader1": "Links Rápidos",
+  "footerLinkHeader2": "Característicos",
+  "footerLinkHeader3": "Entrar em contato",
+
+  "footer1linkParagraph1": "Depoimentos",
+  "footer1linkParagraph2": "Serviços",
+  "footer1linkParagraph3": "Nosso time",
+
+  "footer2linkParagraph1": "Reembolso legal garantido",
+  "footer2linkParagraph2": "Análise do usuário",
+  "footer2linkParagraph3": "Suporte Ilimitado",
+  "footer2linkParagraph4": "Satisfação do Cliente",
+
+  "footer3linkParagraph1": "+1 252-756-9956 ( Atualmente indisponivel )",
+  "footer3linkParagraph2": "ccis-groups@hotmail.com",
+  "footer3linkParagraph3": "359 Manchester St A Greenville, NC 27834, United States",
+
+  "footerRighReserved": "CCIC Todos os direitos reservados"
+}

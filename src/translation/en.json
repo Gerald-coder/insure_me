@@ -1,0 +1,95 @@
+{
+  "navHome": "Home",
+  "navReach": "Reach Out",
+  "navServices": "Services",
+  "navPlan": "Plan",
+  "navAbout": "About",
+  "navQuote": "Get Quote",
+
+  "heroH1": "Quality Insurance with Coastal-Groups",
+  "heroFirstParagraph": "From health and auto insurance to life and home insurance, we've got you covered.",
+  "heroSecondParagraph": "We are one of the leading companies, offering a range of individual and group insurance solutions that meet clients needs.",
+
+  "serviceAutoHeader": "Auto Insurance",
+  "serviceAutoParagraph": "Safe Auto plan",
+
+  "serviceHealthHeader": "Health Insurance",
+  "serviceHealthParagraph": "Healthy Living",
+
+  "serviceTravelHeader": "Travel Insurance",
+  "serviceTravelParagraph": "travel Safe",
+
+  "serviceHomeHeader": "Home Insurance",
+  "serviceHomeParagraph": "Live safe",
+
+  "learnMoreHeader": "New to Insurance? Ready to get started?",
+  "learnMoreFirstParagraph": "Contact us today to speak with an insurance specialist and receive a personalized quote.",
+  "learnMoreSecondParagraph": "Visit our office or reach out to us via phone or email. We look forward to serving you!",
+
+  "whatWeDoHeader": "We take the work off your hands",
+  "whatWeDoHeading1": "Corporate insurance",
+  "whatWeDodescription1": "Comprehensive coverage against losses in corporate organizations, companies, individuals shares and so on",
+
+  "whatWeDoHeading2": "Home Insurance",
+  "whatWeDodescription2": "Safeguard your home and belongings against unexpected events like fire, theft, and natural disasters.",
+
+  "whatWeDoHeading3": "Auto Insurance",
+  "whatWeDodescription3": "Drive with Confidence We offer a range of auto insurance options to protect your vehicle and provide financial security in case of accidents",
+
+  "insuranceServiceHeader": "Insurance Services",
+  "insuranceServiceParagraph": "Explore our comprehensive insurance plans tailored to meet your unique needs and life goals.",
+
+  "insuranceServicesHeading1": "Home Protection",
+  "insuranceServicesDescription1": "Safeguards your home and its contents against various risks, including fire, burglary, natural disasters, and liability claims.",
+
+  "insuranceServicesHeading2": "Life Protection",
+  "insuranceServicesDescription2": "Offers financial security and peace of mind to your loved ones in the event of your passing",
+
+  "insuranceServicesHeading3": "Travel Protection",
+  "insuranceServicesDescription3": "Provides coverage for unexpected events that may disrupt your travel plans (trip cancellation, baggage loss, etc)",
+
+  "insuranceServicesHeading4": "Auto Protection",
+  "insuranceServicesDescription4": "Provides coverage for your vehicles against damages caused by accidents, theft, vandalism, or natural disasters",
+
+  "insuranceServicesHeading5": "corporate protection",
+  "insuranceServicesDescription5": "Provides comprehensive coverage against losses in corporate organizations, companies, individuals shares and so on",
+  "choosePlan": "Choose Plan",
+
+  "testimonialsHeader1": "Why Trust Us?",
+  "testimonialsParagraph1": "We have helped over half a thousands clients secure their life and assets, world wide, giving 100% satisfaction",
+  "testimonialClientText": "life insurance holder @ CCIC-Groups",
+
+  "testimonialsHeader2": "This is what our clients have to say",
+  "testimonialsParagraph2": "With CCIC-Groups, Our dedicated team is always here to assist you, providing personalized support every step of the way",
+
+  "client1name": "Davis L",
+  "client2name": "John M",
+  "client3name": "Sarah T",
+  "client4name": "Maria Curia",
+  "client5name": "",
+
+  "client1TestimonialDesc": "CCIC-Groups made insurance a breeze, guiding me through the process and ensuring comprehensive coverage for my family",
+  "client2TestimonialDesc": "Years with CCIC-Groups, never disappointed. Unmatched dedication to customer satisfaction and finding the perfect insurance solutions",
+  "client3TestimonialDesc": "I recently filed a claim with CCIC-Groups and was impressed by their efficiency and prompt assistance throughout the straightforward process.",
+  "client4TestimonialDesc": "CCIC-Groups truly cares about their clients and goes above and beyond to ensure their satisfaction. I'nothing but positive experiences with them",
+  "client5TestimonialDesc": "",
+
+  "footerLinkHeader1": "Quick links",
+  "footerLinkHeader2": "Features",
+  "footerLinkHeader3": "Get in touch",
+
+  "footer1linkParagraph1": "Testimonials",
+  "footer1linkParagraph2": "Services",
+  "footer1linkParagraph3": "Our Team",
+
+  "footer2linkParagraph1": "Assured legal reimbursement",
+  "footer2linkParagraph2": "User Analytics",
+  "footer2linkParagraph3": "Unlimited Support",
+  "footer2linkParagraph4": "Client Satisfaction",
+
+  "footer3linkParagraph1": "+1 252-756-9956 ( currently unavailable )",
+  "footer3inkParagraph2": "ccis-groups@hotmail.com",
+  "footer3linkParagraph3": "359 Manchester St A Greenville, NC 27834, United States",
+
+  "footerRighReserved": "CCIC All Rights Reserved."
+}

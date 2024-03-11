@@ -6,32 +6,51 @@ import car5 from "../assets/images/car5.webp";
 import lady from "../assets/images/lady.jpg";
 import { clients } from "../utils";
 import Box from "./Box";
+import { useTranslation } from "react-i18next";
 
+/*  eslint-disable */
 
-const Clients = () => {
+const Clients = ({ t }) => {
   const type = false;
   return (
     <section className="flex justify-center h-auto p-2 bg-Gray w-full">
       <div className="p-2 flex flex-col items-center justify-center w-[90vw] h-full md:gap-5">
         <div className="w-[60vw] my-10 text-center md:w-[50%] flex flex-col gap-4">
-          <H1 text="This is what our clients have to say" />
+          <H1 text={t("testimonialsHeader2")} />
 
           <p className="text-center text-gray-800 text-sm font-normal md:text-2xl">
-            With CCIC-Groups, Our dedicated team is always here to assist you,
-            providing personalized support every step of the way
+            {t("testimonialsParagraph2")}
           </p>
         </div>
         <div className="flex justify-center flex-wrap w-[90vw]">
           {clients.map((client) => {
+            let description;
+
+            switch (client.id) {
+              case 1:
+                description = t("client1TestimonialDesc");
+                break;
+              case 2:
+                description = t("client2TestimonialDesc");
+                break;
+              case 3:
+                description = t("client3TestimonialDesc");
+                break;
+              case 4:
+                description = t("client4TestimonialDesc");
+                break;
+              default:
+                description = client.name;
+                break;
+            }
             return (
               <Box
-                desc={client.desc}
+                desc={description}
                 key={client.id}
                 heading={client.name}
                 type={type}
                 image={client.img}
                 id={client.id}
-                // bgColor={"bg-white"}
                 bgColor={"bg-gray-400 bg-opacity-40"}
                 rating={client.rating}
               />
@@ -44,7 +63,8 @@ const Clients = () => {
 };
 
 function Testimonials() {
- 
+  const { t } = useTranslation();
+
   return (
     <>
       <div
@@ -52,16 +72,9 @@ function Testimonials() {
         id="about"
       >
         <div className="p-2 flex flex-col items-center justify-between w-[90vw] h-full md:flex-row gap-9">
-          <div
-            className="flex-1 flex flex-col gap-5"
-            
-          >
-            <H1 text="Why Trust Us?" />
-            <P
-              text={
-                "We have helped over half a thousands clients secure their life and assets, world wide, giving 100% satisfaction"
-              }
-            />
+          <div className="flex-1 flex flex-col gap-5">
+            <H1 text={t("testimonialsHeader1")} />
+            <P text={t("testimonialsParagraph1")} />
             <div className="flex items-center justify-start gap-5">
               <div className="w-[10vh] md:w-[10vh] h-[10vh] rounded-[50%] flex items-center justify-between">
                 <img
@@ -74,7 +87,7 @@ function Testimonials() {
                 <p>
                   <strong>Maria Curia</strong>
                 </p>
-                <p>life insurance holder @ CCIC-Groups</p>
+                <p>{t("testimonialClientText")}</p>
               </div>
             </div>
           </div>
@@ -94,7 +107,7 @@ function Testimonials() {
           </div>
         </div>
       </div>
-      <Clients />
+      <Clients t={t} />
     </>
   );
 }
