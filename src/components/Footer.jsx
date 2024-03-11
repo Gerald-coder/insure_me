@@ -89,13 +89,13 @@ function Footer() {
                           case 1:
                             links = t("footer2linkParagraph1");
                             break;
-                          case 1:
+                          case 2:
                             links = t("footer2linkParagraph2");
                             break;
-                          case 1:
+                          case 3:
                             links = t("footer2linkParagraph3");
                             break;
-                          case 1:
+                          case 4:
                             links = t("footer2linkParagraph4");
                             break;
                           default:
@@ -108,10 +108,10 @@ function Footer() {
                           case 1:
                             links = t("footer3linkParagraph1");
                             break;
-                          case 1:
+                          case 2:
                             links = t("footer3linkParagraph2");
                             break;
-                          case 1:
+                          case 3:
                             links = t("footer3linkParagraph3");
                             break;
                           default:
