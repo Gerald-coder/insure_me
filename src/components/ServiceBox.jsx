@@ -1,6 +1,6 @@
-import React from "react";
+/* eslint-disable */
 
-export default function ServiceBox({ children, heading, signColor }) {
+export default function ServiceBox({ children, heading, signColor, quote }) {
   return (
     <div className="flex justify-center w-[40vw] mx-2 my-2 h-[25vh] border-2 border-gray-300 rounded-lg md:w-[16vw]">
       <div className="flex flex-col my-3 px-2 items-center justify-between">
@@ -14,7 +14,7 @@ export default function ServiceBox({ children, heading, signColor }) {
         <button
           className={`px-4 text-green-500 font-semibold text-xm rounded-lg`}
         >
-          Get a Quote
+          {quote}
         </button>
       </div>
     </div>

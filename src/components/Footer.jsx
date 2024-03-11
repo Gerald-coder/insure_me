@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { MdLocationPin } from "react-icons/md";
 import { footerLinks } from "../utils";
 import logo from "../assets/images/logo.png";
