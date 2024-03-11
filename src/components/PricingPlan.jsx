@@ -3,8 +3,8 @@ import { BsHeartPulse } from "react-icons/bs";
 import { MdOutlineFamilyRestroom } from "react-icons/md";
 import { LuPlane } from "react-icons/lu";
 import { TbBus } from "react-icons/tb";
-import { GiSittingDog } from "react-icons/gi";
 import { useTranslation } from "react-i18next";
+import { PiHouseLight } from "react-icons/pi";
 
 export default function PricingPlan() {
   const { t } = useTranslation();
@@ -59,7 +59,7 @@ export default function PricingPlan() {
           desc={t("insuranceServicesDescription5")}
           buttonColor="bg-[#2E3192]"
         >
-          <GiSittingDog size={60} color="#F1592A" />
+          <PiHouseLight size={60} color="#F1592A" />
         </Box>
       </div>
     </div>
