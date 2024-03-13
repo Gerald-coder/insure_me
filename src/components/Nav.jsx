@@ -33,7 +33,7 @@ export default function Nav() {
   const [showLanguages, setShowlanguages] = useState(false);
   const [curFlag, setCurFlag] = useState(
     i18n.language === "en"
-      ? "https://flagcdn.com/w40/us.png"
+      ? "https://flagcdn.com/w20/us.png"
       : i18n.language === "pt"
       ? "https://flagcdn.com/w20/pt.png"
       : i18n.language === "es"
