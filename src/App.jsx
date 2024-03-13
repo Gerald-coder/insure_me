@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <>
-      <div className="h-[12%] md:h-[15%] py-3  border-b-2 border-gray-400">
+      <div className="h-[12%] md:h-[15%] py-3 border-b-2 border-gray-400">
         <Nav />
       </div>
       <div className="h-[84vh] overflow-y-scroll remove-scrollbar !scroll-smooth">

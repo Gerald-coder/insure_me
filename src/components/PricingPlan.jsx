@@ -4,7 +4,7 @@ import { MdOutlineFamilyRestroom } from "react-icons/md";
 import { LuPlane } from "react-icons/lu";
 import { TbBus } from "react-icons/tb";
 import { useTranslation } from "react-i18next";
-import { PiHouseLight } from "react-icons/pi";
+import { IoBusinessOutline } from "react-icons/io5";
 
 export default function PricingPlan() {
   const { t } = useTranslation();
@@ -59,7 +59,7 @@ export default function PricingPlan() {
           desc={t("insuranceServicesDescription5")}
           buttonColor="bg-[#2E3192]"
         >
-          <PiHouseLight size={60} color="#F1592A" />
+          <IoBusinessOutline size={60} color="#F1592A" />
         </Box>
       </div>
     </div>
