@@ -37,13 +37,13 @@ function LearnMore() {
       id="learn-more"
     >
       <main className="flex flex-col justify-between items-center  gap-1 w-[90vw] md:flex-row md:gap-5">
-        <div className="flex-1 items-center grid grid-cols-3 py-6 gap-4 h-[50%] md:h-[90%] md:py-0">
-          <div className="col-span-2 h-full">
-            <img src={fam1} alt="fam1" className="h-full rounded-lg" />
+        <div className="flex-1 items-center grid grid-cols-3 py-6 gap-4 h-[90%] md:py-0">
+          <div className="col-span-2">
+            <img src={fam1} alt="fam1" className="w-[100%] rounded-lg" />
           </div>
-          <div className="grid grid-cols-1 grid-rows-2 gap-4 h-full">
-            <img src={child} alt="child" className="h-full rounded-lg" />
-            <img src={cars2} alt="car" className="h-full rounded-lg" />
+          <div className="grid grid-cols-1 grid-rows-2 gap-4">
+            <img src={child} alt="child" className="w-[90%] rounded-lg" />
+            <img src={cars2} alt="car" className="w-[90%] rounded-lg" />
           </div>
         </div>
         <div className="flex-1 flex flex-col gap-5 p-5">

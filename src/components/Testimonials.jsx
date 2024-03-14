@@ -68,7 +68,7 @@ function Testimonials() {
   return (
     <>
       <div
-        className="flex justify-center h-[70vh] p-2 bg-Gray  w-full"
+        className="flex justify-center  p-2 bg-Gray  w-full h-full"
         id="about"
       >
         <div className="p-2 flex flex-col items-center justify-between w-[90vw] h-full md:flex-row gap-9">
@@ -91,7 +91,7 @@ function Testimonials() {
               </div>
             </div>
           </div>
-          <div className="flex-1 grid grid-cols-2 gap-2 p-2 bg-gray-400 bg-opacity-40 rounded-tr-lg rounded-bl-lg">
+          <div className="flex-1 grid grid-cols-2 gap-2 p-2 bg-gray-400 bg-opacity-40 rounded-tr-lg rounded-bl-lg  border-2 border-red-800">
             <div className="w-[90%] rounded-lg">
               <img src={car1} alt="car1" className=" rounded-lg" />
             </div>

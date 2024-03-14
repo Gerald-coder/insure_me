@@ -120,9 +120,8 @@ export default function Nav() {
               onClick={() => {
                 setShowlanguages(!showLanguages);
               }}
-              className="flex gap-2 items-center w-[80px] px-1 h-[40px] cursor-pointers "
+              className="flex gap-2 items-center w-[70px] px-1 h-[40px] cursor-pointers"
             >
-              {/* {curLng} */}
               <img
                 src={curFlag}
                 // srcSet="https://flagcdn.com/w80/us.png 2x"
@@ -131,7 +130,7 @@ export default function Nav() {
                 alt="Spain"
               />
               <span className="bold text-2xl ml-0">
-                <MdOutlineKeyboardArrowDown  />
+                <MdOutlineKeyboardArrowDown />
               </span>
             </button>
             <FaAlignJustify
