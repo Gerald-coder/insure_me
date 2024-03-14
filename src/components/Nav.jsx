@@ -63,7 +63,7 @@ export default function Nav() {
             <span className="text-logo1Color">CI</span>
             <span className="text-logo2Color">CC</span>
           </h2>
-          <div className="flex items-center gap-2 text-2xl md:gap-7">
+          <div className="flex items-center gap-1 text-2xl md:gap-7 ">
             <a
               className={`font-semibold hidden ${
                 activeLink == "home" ? "text-[#F1592A]" : "text-gray-400"
@@ -120,7 +120,7 @@ export default function Nav() {
               onClick={() => {
                 setShowlanguages(!showLanguages);
               }}
-              className="flex gap-2 items-center w-[80px] h-[40px] cursor-pointers"
+              className="flex gap-2 items-center w-[80px] px-1 h-[40px] cursor-pointers "
             >
               {/* {curLng} */}
               <img
@@ -131,7 +131,7 @@ export default function Nav() {
                 alt="Spain"
               />
               <span className="bold text-2xl ml-0">
-                <MdOutlineKeyboardArrowDown />
+                <MdOutlineKeyboardArrowDown  />
               </span>
             </button>
             <FaAlignJustify
@@ -149,7 +149,7 @@ export default function Nav() {
               return (
                 <div
                   key={text}
-                  className="w-full flex items-center justify-start gap-3 cursor-pointer border-2 border-red-700"
+                  className="w-full flex items-center justify-start gap-3 cursor-pointer"
                 >
                   <img
                     src={lngs[text].flag}

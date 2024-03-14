@@ -37,7 +37,7 @@ function LearnMore() {
       id="learn-more"
     >
       <main className="flex flex-col justify-between items-center  gap-1 w-[90vw] md:flex-row md:gap-5">
-        <div className="flex-1 items-center grid grid-cols-3 py-6 gap-4 h-[60%] md:h-[90%] md:py-0">
+        <div className="flex-1 items-center grid grid-cols-3 py-6 gap-4 h-[50%] md:h-[90%] md:py-0">
           <div className="col-span-2 h-full">
             <img src={fam1} alt="fam1" className="h-full rounded-lg" />
           </div>
