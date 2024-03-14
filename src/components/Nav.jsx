@@ -17,16 +17,19 @@ export default function Nav() {
       nativeName: "English",
       name: "EN",
       flag: "https://flagcdn.com/w20/us.png",
+      srcSet: "https://flagcdn.com/w80/us.png 2x",
     },
     es: {
       nativeName: "Spanish",
       name: "ES",
       flag: "https://flagcdn.com/w20/es.png",
+      srcSet: "https://flagcdn.com/w80/es.png 2x",
     },
     pt: {
       nativeName: "Portuguese",
       name: "PT",
       flag: "https://flagcdn.com/w20/pt.png",
+      srcSet: "https://flagcdn.com/w80/pt.png 2x",
     },
   });
 
@@ -38,6 +41,16 @@ export default function Nav() {
       ? "https://flagcdn.com/w20/pt.png"
       : i18n.language === "es"
       ? "https://flagcdn.com/w20/es.png"
+      : ""
+  );
+
+  const [curSrcSet, setCurSrcSet] = useState(
+    i18n.language === "en"
+      ? "https://flagcdn.com/w80/us.png 2x"
+      : i18n.language === "pt"
+      ? "https://flagcdn.com/w80/pt.png 2x"
+      : i18n.language === "es"
+      ? "https://flagcdn.com/w80/es.png 2x"
       : ""
   );
 
@@ -112,7 +125,8 @@ export default function Nav() {
               {/* {curLng} */}
               <img
                 src={curFlag}
-                srcSet="https://flagcdn.com/w80/us.png 2x"
+                // srcSet="https://flagcdn.com/w80/us.png 2x"
+                srcSet={curSrcSet}
                 width="40"
                 alt="Spain"
               />
@@ -150,9 +164,11 @@ export default function Nav() {
                       i18n.language === text && "font-extrabold text-[#F1592A]"
                     }`}
                     onClick={() => {
+                      console.log(text);
                       i18n.changeLanguage(text);
                       setShowlanguages(false);
                       setCurFlag(lngs[text].flag);
+                      setCurSrcSet(lngs[text].srcSet);
                     }}
                   >
                     {lngs[text].nativeName}
