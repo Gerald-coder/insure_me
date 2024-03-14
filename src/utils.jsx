@@ -14,9 +14,9 @@ export const footerLinks = [
     title: "Quick links",
     id: 1,
     items: [
-      { id: 1, item: "Testimonials" },
-      { id: 2, item: "Services" },
-      { id: 3, item: "Our team" },
+      { id: 1, item: "Testimonials", url: "testimonial" },
+      { id: 2, item: "Services", url: "services" },
+      { id: 3, item: "Plan", url: "plan" },
     ],
   },
   {

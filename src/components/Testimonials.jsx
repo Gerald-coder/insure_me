@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
 const Clients = ({ t }) => {
   const type = false;
   return (
-    <section className="flex justify-center h-auto p-2 bg-Gray w-full">
+    <section className="flex justify-center h-auto p-2 bg-Gray w-full" id="testimonial">
       <div className="p-2 flex flex-col items-center justify-center w-[90vw] h-full md:gap-5">
         <div className="w-[60vw] my-10 text-center md:w-[50%] flex flex-col gap-4">
           <H1 text={t("testimonialsHeader2")} />
@@ -91,7 +91,7 @@ function Testimonials() {
               </div>
             </div>
           </div>
-          <div className="flex-1 grid grid-cols-2 gap-2 p-2 bg-gray-400 bg-opacity-40 rounded-tr-lg rounded-bl-lg  border-2 border-red-800">
+          <div className="flex-1 grid grid-cols-2 gap-2 p-2 bg-gray-400 bg-opacity-40 rounded-tr-lg rounded-bl-lg">
             <div className="w-[90%] rounded-lg">
               <img src={car1} alt="car1" className=" rounded-lg" />
             </div>
