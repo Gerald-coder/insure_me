@@ -139,7 +139,9 @@ export default function Nav() {
                 >
                   <img
                     src={lngs[text].flag}
-                    srcSet={`https://flagcdn.com/w80/${text}.png 2x`}
+                    srcSet={`https://flagcdn.com/w80/${
+                      text === "en" ? "us" : text
+                    }.png 2x`}
                     width="30"
                     alt="Spain"
                   />
