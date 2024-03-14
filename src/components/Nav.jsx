@@ -17,19 +17,19 @@ export default function Nav() {
       nativeName: "English",
       name: "EN",
       flag: "https://flagcdn.com/w20/us.png",
-      srcSet: "https://flagcdn.com/w80/us.png 2x",
+      srcSet: "https://flagcdn.com/w40/us.png 2x",
     },
     es: {
       nativeName: "Spanish",
       name: "ES",
       flag: "https://flagcdn.com/w20/es.png",
-      srcSet: "https://flagcdn.com/w80/es.png 2x",
+      srcSet: "https://flagcdn.com/w40/es.png 2x",
     },
     pt: {
       nativeName: "Portuguese",
       name: "PT",
       flag: "https://flagcdn.com/w20/pt.png",
-      srcSet: "https://flagcdn.com/w80/pt.png 2x",
+      srcSet: "https://flagcdn.com/w40/pt.png 2x",
     },
   });
 
@@ -46,11 +46,11 @@ export default function Nav() {
 
   const [curSrcSet, setCurSrcSet] = useState(
     i18n.language === "en"
-      ? "https://flagcdn.com/w80/us.png 2x"
+      ? "https://flagcdn.com/w40/us.png 2x"
       : i18n.language === "pt"
-      ? "https://flagcdn.com/w80/pt.png 2x"
+      ? "https://flagcdn.com/w40/pt.png 2x"
       : i18n.language === "es"
-      ? "https://flagcdn.com/w80/es.png 2x"
+      ? "https://flagcdn.com/w40/es.png 2x"
       : ""
   );
 
@@ -127,7 +127,7 @@ export default function Nav() {
                 src={curFlag}
                 // srcSet="https://flagcdn.com/w80/us.png 2x"
                 srcSet={curSrcSet}
-                width="40"
+                width="30"
                 alt="Spain"
               />
               <span className="bold text-2xl ml-0">
@@ -149,11 +149,11 @@ export default function Nav() {
               return (
                 <div
                   key={text}
-                  className="w-full flex items-center justify-start gap-3 cursor-pointer"
+                  className="w-full flex items-center justify-start gap-3 cursor-pointer border-2 border-red-700"
                 >
                   <img
                     src={lngs[text].flag}
-                    srcSet={`https://flagcdn.com/w80/${
+                    srcSet={`https://flagcdn.com/w40/${
                       text === "en" ? "us" : text
                     }.png 2x`}
                     width="30"

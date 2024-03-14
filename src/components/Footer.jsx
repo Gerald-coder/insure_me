@@ -136,7 +136,7 @@ function Footer() {
           })}
         </div>
       </div>
-      <div className="flex py-5 w-full text-white bg-[#444c5c] text-xl font-bold md:text-2xl justify-center">
+      <div className="flex py-5 w-full text-white bg-[#444c5c] text-sm font-bold md:text-2xl justify-center">
         <h1> &copy; {t("footerRighReserved")}</h1>
       </div>
     </>

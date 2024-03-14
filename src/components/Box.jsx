@@ -25,7 +25,7 @@ export default function Box({
           <img
             src={image}
             alt={`client${id}`}
-            className="w-[12vw] md:w-[6vw] h-[10vh] rounded-[50%]"
+            className="w-[16vw] md:w-[6vw] h-[10vh] rounded-[50%]"
           />
         )}
         <p className="text-center text-gray-800 text-lg font-normal">{desc}</p>
