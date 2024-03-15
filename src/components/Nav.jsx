@@ -60,8 +60,8 @@ export default function Nav() {
         <div className="flex w-[90vw] justify-between items-center">
           <h2 className="text-black font-bold text-3xl justify-center">
             <img src={logo} alt="" className="w-[8vw] md:w-[4vw]" />
-            <span className="text-logo1Color">CI</span>
-            <span className="text-logo2Color">CC</span>
+            <span className="text-logo1Color">CC</span>
+            <span className="text-logo2Color">IC</span>
           </h2>
           <div className="flex items-center gap-1 text-2xl md:gap-7 ">
             <a
@@ -111,7 +111,7 @@ export default function Nav() {
             </a>
             <a
               className="p-1 px-4 font-semibold bg-[#2E3192] rounded-md text-white cursor-pointer text-xl md:text-2xl"
-              href="https://t.me/CCICGROUPS"
+              href="https://t.me/CCICLimited"
               target="_blank"
             >
               {t("navQuote")}{" "}
@@ -122,13 +122,7 @@ export default function Nav() {
               }}
               className="flex gap-2 items-center w-[70px] px-1 h-[40px] cursor-pointers"
             >
-              <img
-                src={curFlag}
-                // srcSet="https://flagcdn.com/w80/us.png 2x"
-                srcSet={curSrcSet}
-                width="30"
-                alt="Spain"
-              />
+              <img src={curFlag} srcSet={curSrcSet} width="30" alt="Spain" />
               <span className="bold text-2xl ml-0">
                 <MdOutlineKeyboardArrowDown />
               </span>
@@ -201,7 +195,7 @@ export default function Nav() {
               activeLink == "s-home" ? "text-[#F1592A]" : "text-white"
             } text-sm px-3`}
           >
-            Home
+            {t("navHome")}
           </a>
           <a
             href="#learn-more"
@@ -210,7 +204,7 @@ export default function Nav() {
               activeLink == "s-reach-out" ? "text-[#F1592A]" : "text-white"
             } text-sm px-3`}
           >
-            Reach Out
+            {t("navReach")}
           </a>
           <a
             href="#services"
@@ -219,7 +213,7 @@ export default function Nav() {
               activeLink == "s-service" ? "text-[#F1592A]" : "text-white"
             } text-sm px-3`}
           >
-            Services
+            {t("navServices")}
           </a>
           <a
             href="#plan"
@@ -228,7 +222,7 @@ export default function Nav() {
               activeLink == "s-choose-plan" ? "text-[#F1592A]" : "text-white"
             } text-sm px-3`}
           >
-            Choose Plan
+            {t("navPlan")}
           </a>
           <a
             href="#about"
@@ -237,7 +231,7 @@ export default function Nav() {
               activeLink == "s-abt" ? "text-[#F1592A]" : "text-white"
             } text-sm px-3`}
           >
-            About
+            {t("navAbout")}
           </a>
         </div>
       </div>

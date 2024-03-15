@@ -32,7 +32,7 @@ export default function Box({
         {type ? (
           <a
             className={`py-2 px-4 ${buttonColor} text-white font-semibold text-xm rounded-lg`}
-            href="https://t.me/CCICGROUPS"
+            href="https://t.me/CCICLimited"
             target="_blank"
           >
             {t("choosePlan")}

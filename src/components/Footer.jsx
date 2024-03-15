@@ -35,7 +35,7 @@ function Footer() {
 
   return (
     <>
-      <div className="flex justify-center py-5 border-b-2 border-gray-400 w-full bg-[#444c5c] text-white">
+      <div className="flex justify-center py-5 border-b-2 border-gray-400 w-full bg-[#444c5c] text-black">
         <div className="flex flex-col w-[90vw] items-start justify-between md:items-center md:flex-row">
           <div className="w-full h-full flex items-stat justify-center md:w-[20vw]">
             <img src={logo2} alt="logo2" className="md:w-full" />
@@ -141,7 +141,7 @@ function Footer() {
           })}
         </div>
       </div>
-      <div className="flex py-8 h-24 md:py-5 w-full text-white bg-[#444c5c] text-sm font-bold md:text-2xl justify-center">
+      <div className="flex py-8 h-24 md:py-5 w-full  text-black bg-[#444c5c] text-sm font-bold md:text-2xl justify-center">
         <h1> &copy; {t("footerRighReserved")}</h1>
       </div>
     </>

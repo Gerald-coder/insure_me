@@ -23,8 +23,13 @@
   "serviceHomeParagraph": "Live safe",
 
   "learnMoreHeader": "New to Insurance? Ready to get started?",
-  "learnMoreFirstParagraph": "Contact us today to speak with an insurance specialist and receive a personalized quote.",
-  "learnMoreSecondParagraph": "Visit our office or reach out to us via phone or email. We look forward to serving you!",
+  "learnMoreFirstParagraph": "CCIC offers the best and most secured insurance process for its clients. Get your insurance analyzed and approved in minutes with the following 3 steps.",
+  "learnMoreTitlte1": "Application",
+  "learnMoreDesc1": "When you apply for insurance, you will be asked basic questions such as your name, date of birth, address and often questions about your occupation",
+  "learnMoreTitlte2": "Analysis",
+  "learnMoreDesc2": "After application, your request is being reviewed and analyzed by our agents for better understanding, identification and possible best outcome for your request. Note: Our Analysis takes less than 48hours to provide the best outcome",
+  "learnMoreTitlte3": "Finalize",
+  "learnMoreDesc3": "Finally, getting your insurance processed",
 
   "whatWeDoHeader": "We take the work off your hands",
   "whatWeDoHeading1": "Corporate insurance",
@@ -87,7 +92,7 @@
   "footer2linkParagraph3": "Unlimited Support",
   "footer2linkParagraph4": "Client Satisfaction",
 
-  "footer3linkParagraph1": "+1 252-756-9956 ( currently unavailable )",
+  "footer3linkParagraph1": "+1 252-756-9956 (currently unavailable)",
   "footer3linkParagraph2": "ccis-groups@hotmail.com",
   "footer3linkParagraph3": "359 Manchester St A Greenville, NC 27834, United States",
 

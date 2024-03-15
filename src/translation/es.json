@@ -23,8 +23,14 @@
   "serviceHomeParagraph": "Vive seguro",
 
   "learnMoreHeader": "¿Nuevo en seguros? ¿Listo para comenzar?",
-  "learnMoreFirstParagraph": "Contáctenos hoy para hablar con un especialista en seguros y recibir una cotización personalizada.",
-  "learnMoreSecondParagraph": "Visite nuestra oficina o comuníquese con nosotros por teléfono o correo electrónico. ¡Esperamos poder servirle!",
+  "learnMoreFirstParagraph": "CCIC ofrece el mejor y más seguro proceso de seguro para sus clientes. Obtenga su seguro analizado y aprobado en minutos con los siguientes 3 pasos.",
+
+  "learnMoreTitlte1": "Solicitud",
+  "learnMoreDesc1": "Cuando solicite un seguro, se le harán preguntas básicas como su nombre, fecha de nacimiento, dirección y, a menudo, preguntas sobre su ocupación.",
+  "learnMoreTitlte2": "Análisis",
+  "learnMoreDesc2": "Después de la solicitud, nuestros agentes revisan y analizan su solicitud para una mejor comprensión, identificación y posible mejor resultado para su solicitud. Nota: Nuestro análisis tarda menos de 48 horas en proporcionar el mejor resultado.",
+  "learnMoreTitlte3": "Finalizar",
+  "learnMoreDesc3": "Finalmente, procesar su seguro",
 
   "whatWeDoHeader": "Le quitamos el trabajo de las manos",
   "whatWeDoHeading1": "Seguro corporativo",
@@ -87,7 +93,7 @@
   "footer2linkParagraph3": "Soporte ilimitado",
   "footer2linkParagraph4": "Satisfacción del cliente",
 
-  "footer3linkParagraph1": "+1 252-756-9956 ( actualmente no disponible )",
+  "footer3linkParagraph1": "+1 252-756-9956 (actualmente no disponible)",
   "footer3linkParagraph2": "ccis-groups@hotmail.com",
   "footer3linkParagraph3": "359 Manchester St A Greenville, NC 27834, United States",
 

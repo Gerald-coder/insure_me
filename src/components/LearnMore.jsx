@@ -1,21 +1,26 @@
 import fam1 from "../assets/images/fam1.webp";
 import child from "../assets/images/child.webp";
 import cars2 from "../assets/images/cars2.webp";
-import { MdLocationPin } from "react-icons/md";
-import { FaPhone } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 
 /* eslint-disable */
 
 const explore = [
   {
-    icon: <MdLocationPin size={25} />,
-    text: "359 Manchester St A Greenville, NC 27834, United States",
+    title: "Application",
+    desc: "When you apply for insurance, you will be asked basic questions such as your name, date of birth, address and often questions about your occupation",
     id: 1,
   },
-  { icon: <FaPhone size={25} />, text: "+1 252-756-9956", id: 2 },
-  { icon: <MdEmail size={25} />, text: "ccis-groups@hotmail.com", id: 3 },
+  {
+    title: "Analysis",
+    desc: "After application, your request is being reviewed and analyzed by our agents for better understanding, identification and possible best outcome for your request. Note: Our Analysis takes less than 48hours to provide the best outcome",
+    id: 2,
+  },
+  {
+    title: "Finalize",
+    desc: "Finally, getting your insurance processed",
+    id: 3,
+  },
 ];
 
 export const H1 = ({ text }) => {
@@ -53,22 +58,48 @@ function LearnMore() {
           <p className="text-xl font-normal md:text-2xl">
             {t("learnMoreFirstParagraph")}
           </p>
-          <p className="text-xl font-normal md:text-2xl text-[#F1592A]">
-            {t("learnMoreSecondParagraph")}
-          </p>
-
-          <ul className="font-semibold md:text-xl">
+          <div className="md:text-xl flex flex-col gap-4">
             {explore.map((exp) => {
+              let desc;
+              switch (exp.id) {
+                case 1:
+                  desc = t("learnMoreDesc1");
+                  break;
+                case 2:
+                  desc = t("learnMoreDesc2");
+                  break;
+                case 3:
+                  desc = t("learnMoreDesc3");
+                  break;
+                default:
+                  desc = exp.desc;
+                  break;
+              }
+
+              let title;
+              switch (exp.id) {
+                case 1:
+                  title = t("learnMoreTitlte1");
+                  break;
+                case 2:
+                  title = t("learnMoreTitlte2");
+                  break;
+                case 3:
+                  title = t("learnMoreTitlte3");
+                  break;
+                default:
+                  title = exp.title;
+                  break;
+              }
+
               return (
-                <li
-                  key={exp.id}
-                  className="flex items-center justify-start gap-5 p-2"
-                >
-                  <span>{exp.icon}</span> <span>{exp.text}</span>
-                </li>
+                <div key={exp.id} className="md:text-xl flex flex-col gap-2">
+                  <h1 className="gap-2 font-semibold">{title}</h1>
+                  <p>{desc}</p>
+                </div>
               );
             })}
-          </ul>
+          </div>
         </div>
       </main>
     </div>
