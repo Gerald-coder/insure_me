@@ -17,27 +17,40 @@ export default function Nav() {
       nativeName: "English",
       name: "EN",
       flag: "https://flagcdn.com/w20/us.png",
+      srcSet: "https://flagcdn.com/w40/us.png 2x",
     },
     es: {
       nativeName: "Spanish",
       name: "ES",
       flag: "https://flagcdn.com/w20/es.png",
+      srcSet: "https://flagcdn.com/w40/es.png 2x",
     },
     pt: {
       nativeName: "Portuguese",
       name: "PT",
       flag: "https://flagcdn.com/w20/pt.png",
+      srcSet: "https://flagcdn.com/w40/pt.png 2x",
     },
   });
 
   const [showLanguages, setShowlanguages] = useState(false);
   const [curFlag, setCurFlag] = useState(
     i18n.language === "en"
-      ? "https://flagcdn.com/w40/us.png"
+      ? "https://flagcdn.com/w20/us.png"
       : i18n.language === "pt"
       ? "https://flagcdn.com/w20/pt.png"
       : i18n.language === "es"
       ? "https://flagcdn.com/w20/es.png"
+      : ""
+  );
+
+  const [curSrcSet, setCurSrcSet] = useState(
+    i18n.language === "en"
+      ? "https://flagcdn.com/w40/us.png 2x"
+      : i18n.language === "pt"
+      ? "https://flagcdn.com/w40/pt.png 2x"
+      : i18n.language === "es"
+      ? "https://flagcdn.com/w40/es.png 2x"
       : ""
   );
 
@@ -47,10 +60,10 @@ export default function Nav() {
         <div className="flex w-[90vw] justify-between items-center">
           <h2 className="text-black font-bold text-3xl justify-center">
             <img src={logo} alt="" className="w-[8vw] md:w-[4vw]" />
-            <span className="text-logo1Color">CI</span>
-            <span className="text-logo2Color">CC</span>
+            <span className="text-logo1Color">CC</span>
+            <span className="text-logo2Color">IC</span>
           </h2>
-          <div className="flex items-center gap-2 text-2xl md:gap-7">
+          <div className="flex items-center gap-1 text-2xl md:gap-7 ">
             <a
               className={`font-semibold hidden ${
                 activeLink == "home" ? "text-[#F1592A]" : "text-gray-400"
@@ -98,7 +111,7 @@ export default function Nav() {
             </a>
             <a
               className="p-1 px-4 font-semibold bg-[#2E3192] rounded-md text-white cursor-pointer text-xl md:text-2xl"
-              href="https://t.me/CCICGROUPS"
+              href="https://t.me/CCICLimited"
               target="_blank"
             >
               {t("navQuote")}{" "}
@@ -107,15 +120,9 @@ export default function Nav() {
               onClick={() => {
                 setShowlanguages(!showLanguages);
               }}
-              className="flex gap-2 items-center w-[80px] h-[40px] cursor-pointers"
+              className="flex gap-2 items-center w-[70px] px-1 h-[40px] cursor-pointers"
             >
-              {/* {curLng} */}
-              <img
-                src={curFlag}
-                srcSet="https://flagcdn.com/w80/us.png 2x"
-                width="40"
-                alt="Spain"
-              />
+              <img src={curFlag} srcSet={curSrcSet} width="30" alt="Spain" />
               <span className="bold text-2xl ml-0">
                 <MdOutlineKeyboardArrowDown />
               </span>
@@ -139,7 +146,9 @@ export default function Nav() {
                 >
                   <img
                     src={lngs[text].flag}
-                    srcSet={`https://flagcdn.com/w80/${text}.png 2x`}
+                    srcSet={`https://flagcdn.com/w40/${
+                      text === "en" ? "us" : text
+                    }.png 2x`}
                     width="30"
                     alt="Spain"
                   />
@@ -148,9 +157,11 @@ export default function Nav() {
                       i18n.language === text && "font-extrabold text-[#F1592A]"
                     }`}
                     onClick={() => {
+                      console.log(text);
                       i18n.changeLanguage(text);
                       setShowlanguages(false);
                       setCurFlag(lngs[text].flag);
+                      setCurSrcSet(lngs[text].srcSet);
                     }}
                   >
                     {lngs[text].nativeName}
@@ -184,7 +195,7 @@ export default function Nav() {
               activeLink == "s-home" ? "text-[#F1592A]" : "text-white"
             } text-sm px-3`}
           >
-            Home
+            {t("navHome")}
           </a>
           <a
             href="#learn-more"
@@ -193,7 +204,7 @@ export default function Nav() {
               activeLink == "s-reach-out" ? "text-[#F1592A]" : "text-white"
             } text-sm px-3`}
           >
-            Reach Out
+            {t("navReach")}
           </a>
           <a
             href="#services"
@@ -202,7 +213,7 @@ export default function Nav() {
               activeLink == "s-service" ? "text-[#F1592A]" : "text-white"
             } text-sm px-3`}
           >
-            Services
+            {t("navServices")}
           </a>
           <a
             href="#plan"
@@ -211,7 +222,7 @@ export default function Nav() {
               activeLink == "s-choose-plan" ? "text-[#F1592A]" : "text-white"
             } text-sm px-3`}
           >
-            Choose Plan
+            {t("navPlan")}
           </a>
           <a
             href="#about"
@@ -220,7 +231,7 @@ export default function Nav() {
               activeLink == "s-abt" ? "text-[#F1592A]" : "text-white"
             } text-sm px-3`}
           >
-            About
+            {t("navAbout")}
           </a>
         </div>
       </div>

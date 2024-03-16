@@ -1,6 +1,7 @@
 {
   "name": "insurance",
   "private": true,
+  "homepage": "https://ccic-limited.com/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

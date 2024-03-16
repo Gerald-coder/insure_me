@@ -4,7 +4,7 @@ import client3 from "./assets/images/client3.jpg";
 import { FaStar } from "react-icons/fa";
 import lady from "./assets/images/lady.jpg";
 import { MdLocationPin } from "react-icons/md";
-import { FaPhone } from "react-icons/fa6";
+// import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 /* eslint-disable */
@@ -14,9 +14,9 @@ export const footerLinks = [
     title: "Quick links",
     id: 1,
     items: [
-      { id: 1, item: "Testimonials" },
-      { id: 2, item: "Services" },
-      { id: 3, item: "Our team" },
+      { id: 1, item: "Testimonials", url: "testimonial" },
+      { id: 2, item: "Services", url: "services" },
+      { id: 3, item: "Plan", url: "plan" },
     ],
   },
   {
@@ -33,11 +33,11 @@ export const footerLinks = [
     title: "Get in touch",
     id: 3,
     items: [
-      {
-        id: 1,
-        item: "+1 252-756-9956 ( currently unavailable )",
-        icon: <FaPhone size={25} />,
-      },
+      // {
+      //   id: 1,
+      //   item: "+1 252-756-9956 ( currently unavailable )",
+      //   icon: <FaPhone size={25} />,
+      // },
       { id: 2, item: "ccis-groups@hotmail.com", icon: <MdEmail size={25} /> },
       {
         id: 3,
