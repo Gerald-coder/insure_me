@@ -120,10 +120,10 @@ export default function Nav() {
               onClick={() => {
                 setShowlanguages(!showLanguages);
               }}
-              className="flex gap-2 items-center w-[70px] px-1 h-[40px] cursor-pointers"
+              className="flex items-center px-0 h-[40px] cursor-pointers"
             >
               <img src={curFlag} srcSet={curSrcSet} width="30" alt="Spain" />
-              <span className="bold text-2xl ml-0">
+              <span className="bold text-xl">
                 <MdOutlineKeyboardArrowDown />
               </span>
             </button>

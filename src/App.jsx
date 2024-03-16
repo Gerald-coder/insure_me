@@ -10,11 +10,11 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <>
-      <div className="h-[14%] md:h-[15%] py-3 border-b-2 border-gray-400">
+    <div className="h-screen">
+      <div className="h-[14%] py-3 border-b-2 border-gray-400 md:h-[15%]">
         <Nav />
       </div>
-      <div className="h-[86vh] overflow-y-scroll remove-scrollbar !scroll-smooth">
+      <div className="h-[86%] overflow-y-scroll remove-scrollbar !scroll-smooth md:h-[85%]">
         <Hero />
         <div className="flex flex-col items-center mt-4">
           <Service />
@@ -25,6 +25,6 @@ export default function App() {
           <Footer />
         </div>
       </div>
-    </>
+    </div>
   );
 }
