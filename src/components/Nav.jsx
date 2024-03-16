@@ -5,7 +5,7 @@ import logo from "../assets/images/logo.png";
 import { useTranslation } from "react-i18next";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
-export default function Nav() {
+export default function Nav({ className }) {
   const { t, i18n } = useTranslation();
   const [dropDown, setDropDown] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
@@ -55,7 +55,7 @@ export default function Nav() {
   );
 
   return (
-    <div className="h-full" onClick={updateActiveLink}>
+    <div className={`h-full ${className || ""}`} onClick={updateActiveLink}>
       <div className={`flex justify-center ${dropDown ? "hidden" : ""}`}>
         <div className="flex w-[90vw] justify-between items-center">
           <h2 className="text-black font-bold text-3xl justify-center">
