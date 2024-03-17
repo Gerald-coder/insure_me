@@ -59,7 +59,7 @@ function Footer() {
             return (
               <div
                 key={details.id}
-                className="flex flex-col items-start justify-start w-full py-4 md:w-auto"
+                className="flex flex-col items-start justify-start gap-4 h-full w-full p-4 md:w-auto"
               >
                 <h1 className="font-bold text-xl md:text-3xl">
                   {footerHeader}
@@ -141,7 +141,7 @@ function Footer() {
           })}
         </div>
       </div>
-      <div className="flex py-8 md:py-5 w-full  text-black bg-[#444c5c] text-sm font-bold md:text-2xl justify-center">
+      <div className="flex py-8 h-24 md:py-5 w-full  text-black bg-[#444c5c] text-sm font-bold md:text-2xl justify-center">
         <h1> &copy; {t("footerRighReserved")}</h1>
       </div>
     </>
